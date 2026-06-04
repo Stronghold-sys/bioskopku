@@ -10,6 +10,30 @@ import { API_BASE, API_URL } from '../config';
 // Helper to format currency
 const formatRupiah = (val) => `Rp ${val.toLocaleString('id-ID')}`;
 
+// Helper to extract YouTube video ID and return embed URL
+const getYouTubeEmbedUrl = (url) => {
+  if (!url) return '';
+  if (url.includes('youtube.com/embed/')) return url;
+  
+  let videoId = '';
+  try {
+    if (url.includes('youtube.com/watch')) {
+      const urlObj = new URL(url);
+      videoId = urlObj.searchParams.get('v');
+    } else if (url.includes('youtu.be/')) {
+      const urlParts = url.split('/');
+      videoId = urlParts[urlParts.length - 1].split('?')[0];
+    } else if (url.includes('youtube.com/shorts/')) {
+      const urlParts = url.split('/shorts/');
+      videoId = urlParts[1].split('?')[0];
+    }
+  } catch (e) {
+    console.error('Invalid YouTube URL:', e);
+  }
+  
+  return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+};
+
 // ==========================================
 // 1. HOME VIEW
 // ==========================================
@@ -537,7 +561,7 @@ export const MovieDetails = () => {
           <h3 style={{ fontSize: '1rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem' }}>Trailer Resmi</h3>
           <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <iframe 
-              src={movie.trailerUrl} 
+              src={getYouTubeEmbedUrl(movie.trailerUrl)} 
               title={`${movie.title} Official Trailer`} 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -1567,7 +1591,7 @@ export const TicketDetail = () => {
           
           <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px' }}>
             <iframe 
-              src={ticket.movie.trailerUrl} 
+              src={getYouTubeEmbedUrl(ticket.movie.trailerUrl)} 
               title={`${ticket.movie.title} Trailer`} 
               frameBorder="0" 
               allowFullScreen

@@ -10,6 +10,7 @@ const cinemaController = require('../controllers/cinemaController');
 const bookingController = require('../controllers/bookingController');
 const promoController = require('../controllers/promoController');
 const adminController = require('../controllers/adminController');
+const uploadController = require('../controllers/uploadController');
 
 // ==========================================
 // AUTH ROUTES
@@ -32,6 +33,7 @@ router.get('/movies/:id', movieController.getMovieById);
 router.post('/movies', protect, admin, movieController.createMovie);
 router.put('/movies/:id', protect, admin, movieController.updateMovie);
 router.delete('/movies/:id', protect, admin, movieController.deleteMovie);
+router.post('/upload', protect, admin, uploadController.uploadFile);
 
 // ==========================================
 // CINEMA & STUDIO ROUTES

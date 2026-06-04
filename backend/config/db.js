@@ -702,5 +702,6 @@ module.exports = {
   isMockMode: () => !isSupabaseConfigured() && !process.env.MONGODB_URI,
   isSupabaseMode: () => isSupabaseConfigured(),
   dbModel,
-  generateObjectId
+  generateObjectId,
+  supabase
 };

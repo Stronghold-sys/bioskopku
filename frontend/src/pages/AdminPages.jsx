@@ -16,6 +16,30 @@ const getAuthHeaders = () => {
   };
 };
 
+// Helper to extract YouTube video ID and return embed URL
+const getYouTubeEmbedUrl = (url) => {
+  if (!url) return '';
+  if (url.includes('youtube.com/embed/')) return url;
+  
+  let videoId = '';
+  try {
+    if (url.includes('youtube.com/watch')) {
+      const urlObj = new URL(url);
+      videoId = urlObj.searchParams.get('v');
+    } else if (url.includes('youtu.be/')) {
+      const urlParts = url.split('/');
+      videoId = urlParts[urlParts.length - 1].split('?')[0];
+    } else if (url.includes('youtube.com/shorts/')) {
+      const urlParts = url.split('/shorts/');
+      videoId = urlParts[1].split('?')[0];
+    }
+  } catch (e) {
+    console.error('Invalid YouTube URL:', e);
+  }
+  
+  return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+};
+
 export const AdminDashboard = () => {
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -189,6 +213,56 @@ export const MovieManagement = () => {
   const [duration, setDuration] = useState('');
   const [rating, setRating] = useState('');
   const [releaseDate, setReleaseDate] = useState('');
+  const [uploading, setUploading] = useState(false);
+
+  const handleFileUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      setModal({ isOpen: true, type: 'error', title: 'File Terlalu Besar', message: 'Maksimal ukuran file poster adalah 5MB.' });
+      return;
+    }
+
+    setUploading(true);
+
+    const reader = new FileReader();
+    reader.onloadend = async () => {
+      try {
+        const token = localStorage.getItem('accessToken');
+        const res = await fetch(`${API_URL}/upload`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            name: file.name,
+            type: file.type,
+            base64: reader.result
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          setPosterUrl(data.url);
+          setModal({ isOpen: true, type: 'success', title: 'Poster Diunggah', message: 'Poster berhasil diunggah dari perangkat!' });
+        } else {
+          setModal({ isOpen: true, type: 'error', title: 'Gagal Unggah', message: data.message });
+        }
+      } catch (err) {
+        console.error(err);
+        setModal({ isOpen: true, type: 'error', title: 'Error', message: 'Gagal menghubungi server untuk unggah poster.' });
+      } finally {
+        setUploading(false);
+      }
+    };
+    reader.onerror = () => {
+      setModal({ isOpen: true, type: 'error', title: 'Error', message: 'Gagal membaca berkas gambar.' });
+      setUploading(false);
+    };
+    reader.readAsDataURL(file);
+  };
 
   const fetchMovies = async () => {
     try {
@@ -240,7 +314,8 @@ export const MovieManagement = () => {
       return;
     }
 
-    const payload = { title, posterUrl, trailerUrl, synopsis, genre, duration: Number(duration), rating, releaseDate };
+    const embedTrailerUrl = getYouTubeEmbedUrl(trailerUrl);
+    const payload = { title, posterUrl, trailerUrl: embedTrailerUrl, synopsis, genre, duration: Number(duration), rating, releaseDate };
     
     try {
       let res;
@@ -365,13 +440,51 @@ export const MovieManagement = () => {
                   <label className="input-label">Genre</label>
                   <input type="text" className="input-field" value={genre} onChange={(e) => setGenre(e.target.value)} placeholder="e.g. Action, Sci-Fi" />
                 </div>
-                <div className="input-group">
-                  <label className="input-label">Poster URL (Internet Link)</label>
-                  <input type="text" className="input-field" value={posterUrl} onChange={(e) => setPosterUrl(e.target.value)} placeholder="https://..." />
+                <div className="input-group" style={{ gridColumn: 'span 2' }}>
+                  <label className="input-label">Poster Film</label>
+                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                    {posterUrl && (
+                      <img src={posterUrl} alt="Poster Preview" style={{ width: '80px', height: '120px', objectFit: 'cover', borderRadius: '8px', border: '1px solid rgba(255, 255, 255, 0.1)' }} />
+                    )}
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                      <input 
+                        type="text" 
+                        className="input-field" 
+                        value={posterUrl} 
+                        onChange={(e) => setPosterUrl(e.target.value)} 
+                        placeholder="Masukkan URL Gambar (https://...) atau unggah di bawah" 
+                      />
+                      <div style={{ position: 'relative' }}>
+                        <input 
+                          type="file" 
+                          id="poster-upload" 
+                          accept="image/*" 
+                          style={{ display: 'none' }} 
+                          onChange={handleFileUpload} 
+                          disabled={uploading}
+                        />
+                        <label 
+                          htmlFor="poster-upload" 
+                          className="btn btn-secondary" 
+                          style={{ 
+                            display: 'inline-flex', 
+                            alignItems: 'center', 
+                            gap: '8px', 
+                            cursor: uploading ? 'not-allowed' : 'pointer',
+                            opacity: uploading ? 0.6 : 1,
+                            fontSize: '0.85rem',
+                            padding: '0.5rem 1rem'
+                          }}
+                        >
+                          {uploading ? 'Mengunggah...' : 'Pilih File dari Device'}
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="input-group">
-                  <label className="input-label">Trailer Embed URL (YouTube Link)</label>
-                  <input type="text" className="input-field" value={trailerUrl} onChange={(e) => setTrailerUrl(e.target.value)} placeholder="https://www.youtube.com/embed/..." />
+                <div className="input-group" style={{ gridColumn: 'span 2' }}>
+                  <label className="input-label">Trailer Resmi (YouTube Link)</label>
+                  <input type="text" className="input-field" value={trailerUrl} onChange={(e) => setTrailerUrl(e.target.value)} placeholder="e.g. https://www.youtube.com/watch?v=... atau https://youtu.be/..." />
                 </div>
                 <div className="input-group">
                   <label className="input-label">Durasi (Menit)</label>

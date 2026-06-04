@@ -8,24 +8,32 @@ let resend = null;
 if (resendApiKey && resendApiKey.startsWith('re_')) {
   try {
     resend = new Resend(resendApiKey);
-    console.log('✉️ Resend Mailer Initialized with API Key.');
+    console.log('Resend Mailer Initialized with API Key.');
   } catch (error) {
-    console.error('❌ Resend Mailer Initialization Error:', error.message);
+    console.error(' Resend Mailer Initialization Error:', error.message);
   }
 } else {
-  console.log('⚠️ RESEND_API_KEY is not defined or invalid. Emails will be logged to backend/logs/otp.log and console.');
+  console.log(' RESEND_API_KEY is not defined or invalid. Emails will be logged to backend/logs/otp.log and console.');
 }
 
 // Ensure logs directory exists
 const logDir = path.join(__dirname, '..', 'logs');
-if (!fs.existsSync(logDir)) {
-  fs.mkdirSync(logDir, { recursive: true });
+try {
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+  }
+} catch (err) {
+  console.warn('⚠️ Could not create logs directory (likely read-only serverless environment):', err.message);
 }
 const logFile = path.join(logDir, 'otp.log');
 
 const writeToLogFile = (message) => {
   const timestamp = new Date().toISOString();
-  fs.appendFileSync(logFile, `[${timestamp}] ${message}\n`, 'utf8');
+  try {
+    fs.appendFileSync(logFile, `[${timestamp}] ${message}\n`, 'utf8');
+  } catch (err) {
+    console.warn('⚠️ Could not write to log file:', err.message);
+  }
 };
 
 const getCurrentTimeIndonesian = () => {
@@ -49,14 +57,14 @@ const sendResendEmail = async (to, subject, htmlContent) => {
     });
 
     if (response && response.error) {
-      console.error(`❌ Resend API Error for recipient ${to}:`, response.error.message);
+      console.error(` Resend API Error for recipient ${to}:`, response.error.message);
       return false;
     }
 
-    console.log(`✉️ Email berhasil dikirim ke ${to}`);
+    console.log(` Email berhasil dikirim ke ${to}`);
     return true;
   } catch (error) {
-    console.error(`❌ Resend Exception ketika mengirim ke ${to}:`, error.message);
+    console.error(` Resend Exception ketika mengirim ke ${to}:`, error.message);
     return false;
   }
 };
@@ -77,7 +85,7 @@ const sendRegisterOTP = async (email, name, otp) => {
   `;
 
   const logMessage = `[REGISTER OTP] Sent to ${email} (${name}): ${otp}`;
-  console.log(`\n========================================\n📩 ${logMessage}\n========================================\n`);
+  console.log(`\n========================================\n ${logMessage}\n========================================\n`);
   writeToLogFile(logMessage);
 
   if (resend) {
@@ -104,7 +112,7 @@ const sendLoginAlert = async (email, name) => {
   `;
 
   const logMessage = `[LOGIN ALERT] Sent to ${email} (${name}) at ${timeStr}`;
-  console.log(`\n========================================\n📩 ${logMessage}\n========================================\n`);
+  console.log(`\n========================================\n ${logMessage}\n========================================\n`);
   writeToLogFile(logMessage);
 
   if (resend) {
@@ -129,7 +137,7 @@ const sendForgotPasswordOTP = async (email, name, otp) => {
   `;
 
   const logMessage = `[FORGOT PASSWORD OTP] Sent to ${email} (${name}): ${otp}`;
-  console.log(`\n========================================\n📩 ${logMessage}\n========================================\n`);
+  console.log(`\n========================================\n ${logMessage}\n========================================\n`);
   writeToLogFile(logMessage);
 
   if (resend) {
@@ -156,7 +164,7 @@ const sendChangePasswordAlert = async (email, name) => {
   `;
 
   const logMessage = `[CHANGE PASSWORD ALERT] Sent to ${email} (${name}) at ${timeStr}`;
-  console.log(`\n========================================\n📩 ${logMessage}\n========================================\n`);
+  console.log(`\n========================================\n ${logMessage}\n========================================\n`);
   writeToLogFile(logMessage);
 
   if (resend) {
