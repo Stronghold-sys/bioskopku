@@ -5,8 +5,7 @@ import { io } from 'socket.io-client';
 import confetti from 'canvas-confetti';
 import ConfirmationModal from '../components/ConfirmationModal';
 import SkeletonCard from '../components/SkeletonCard';
-
-const API_URL = 'http://localhost:5000/api/v1';
+import { API_BASE, API_URL } from '../config';
 
 // Helper to format currency
 const formatRupiah = (val) => `Rp ${val.toLocaleString('id-ID')}`;
@@ -41,7 +40,7 @@ export const Home = () => {
     }, 0);
 
     // Setup Socket.io real-time listeners for all roles
-    const socket = io('http://localhost:5000');
+    const socket = io(API_BASE);
     socket.on('movies-updated', () => {
       console.log('⚡ Real-time Broadcast: Movies database changed. Reloading Home list...');
       fetchData();
@@ -224,7 +223,7 @@ export const MovieList = () => {
   }, [search]);
 
   useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const socket = io(API_BASE);
     socket.on('movies-updated', () => {
       console.log('⚡ Real-time Broadcast: Movies database changed. Reloading MovieList...');
       fetchMovies();
@@ -477,7 +476,7 @@ export const MovieDetails = () => {
   }, [id, selectedDate]);
 
   useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const socket = io(API_BASE);
     
     socket.on('showtimes-updated', () => {
       console.log('⚡ Real-time Broadcast: Showtimes database changed. Reloading showtimes details...');
@@ -710,7 +709,7 @@ export const SeatBooking = () => {
     }, 0);
 
     // Set up Socket connection for real-time seat synching
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io(API_BASE);
     const socket = socketRef.current;
 
     socket.emit('join-showtime', showtimeId);

@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { LayoutDashboard, Film, Calendar, Tag, FileText, Plus, Edit2, Trash2, ShieldAlert, Filter, DollarSign, Users, Film as FilmIcon } from 'lucide-react';
 import { io } from 'socket.io-client';
 import ConfirmationModal from '../components/ConfirmationModal';
-
-const API_URL = 'http://localhost:5000/api/v1';
+import { API_BASE, API_URL } from '../config';
 
 // Helper to format currency
 const formatRupiah = (val) => `Rp ${val.toLocaleString('id-ID')}`;
@@ -45,7 +44,7 @@ export const AdminDashboard = () => {
     }, 0);
 
     // Socket listener for live sales dashboard updates (Real-time!)
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io(API_BASE);
     const socket = socketRef.current;
 
     socket.on('dashboard-update', (payload) => {

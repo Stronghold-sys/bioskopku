@@ -3,8 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { Mail, Lock, User, Key, Eye, EyeOff } from 'lucide-react';
 import ConfirmationModal from '../components/ConfirmationModal';
 
-// Shared API endpoint base
-const API_URL = 'http://localhost:5000/api/v1';
+import { API_URL } from '../config';
 
 export const Login = ({ onLoginSuccess }) => {
   const navigate = useNavigate();

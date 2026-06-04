@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
 import { LayoutDashboard, Film, Calendar, Tag, FileText } from 'lucide-react';
+import { API_URL } from './config';
 
 
 // Import User views
@@ -186,7 +187,7 @@ const PromoList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/v1/promos')
+    fetch(`${API_URL}/promos`)
       .then(res => res.json())
       .then(data => {
         if (data.success) setPromos(data.promos);
