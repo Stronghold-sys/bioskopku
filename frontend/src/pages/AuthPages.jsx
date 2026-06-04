@@ -175,7 +175,7 @@ export const Register = () => {
       } else {
         setModal({ isOpen: true, type: 'error', title: 'Registrasi Gagal', message: data.message });
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setModal({ isOpen: true, type: 'error', title: 'Kesalahan Sistem', message: 'Tidak dapat terhubung ke server.' });
     }
@@ -300,7 +300,7 @@ export const VerifyOTP = ({ onLoginSuccess }) => {
       } else {
         setModal({ isOpen: true, type: 'error', title: 'Verifikasi Gagal', message: data.message });
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setModal({ isOpen: true, type: 'error', title: 'Kesalahan Sistem', message: 'Tidak dapat memverifikasi OTP.' });
     }
@@ -386,7 +386,7 @@ export const ForgotPassword = () => {
       } else {
         setModal({ isOpen: true, type: 'error', title: 'Lupa Password Gagal', message: data.message });
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setModal({ isOpen: true, type: 'error', title: 'Kesalahan Sistem', message: 'Gagal mengirim OTP.' });
     }
@@ -472,7 +472,7 @@ export const ResetPassword = () => {
       } else {
         setModal({ isOpen: true, type: 'error', title: 'Gagal Mengubah Password', message: data.message });
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setModal({ isOpen: true, type: 'error', title: 'Kesalahan Sistem', message: 'Gagal mengatur ulang password.' });
     }
