@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "8fa2021a-e8d1-4db8-b118-8f81a7ee9a3c",
+		"name": "TiketKu API Collection",
+		"description": "API collection for TiketKu Cinema Ticket Booking System containing Auth, Movies, Bookings, Payments, Tickets, and Admin dashboards.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"user@tiketku.com\",\n    \"password\": \"user123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"otp\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/verify-otp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"password\": \"user123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@tiketku.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/forgot-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"otp\": \"123456\",\n    \"newPassword\": \"newuser123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/reset-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/auth/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Get Movies (List/Filter/Search)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/movies?search=dune&genre=Sci-Fi",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"movies"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "dune"
+								},
+								{
+									"key": "genre",
+									"value": "Sci-Fi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Movie (Admin Only)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Oppenheimer\",\n    \"posterUrl\": \"https://image.tmdb.org/t/p/original/8Gxv2wSbs87WgQ76FCwNy2b77QI.jpg\",\n    \"trailerUrl\": \"https://www.youtube.com/embed/uYPbbksJxIg\",\n    \"synopsis\": \"The story of J. Robert Oppenheimer and his nuclear program.\",\n    \"genre\": \"Biography, Drama, History\",\n    \"duration\": 180,\n    \"rating\": \"R\",\n    \"releaseDate\": \"2023-07-21\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/movies",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings & Payments",
+			"item": [
+				{
+					"name": "Get Showtimes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/showtimes?movieId=some_id&date=2026-06-05",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showtimes"
+							],
+							"query": [
+								{
+									"key": "movieId",
+									"value": "some_id"
+								},
+								{
+									"key": "date",
+									"value": "2026-06-05"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Seat Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"showtimeId\": \"some_showtime_id\",\n    \"selectedSeats\": [\"A-1\", \"A-2\"],\n    \"promoCode\": \"TIKETKUSTART\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/bookings",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Payment Checkout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookingId\": \"some_booking_id\",\n    \"paymentMethod\": \"E-Wallet (GoPay/OVO/Dana)\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payments/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payments",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ticket Digital",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/tickets/some_booking_id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"tickets",
+								"some_booking_id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Dashboard",
+			"item": [
+				{
+					"name": "Get Admin Dashboard Stats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/dashboard",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaction Reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/reports?startDate=2026-06-01&paymentStatus=Paid",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2026-06-01"
+								},
+								{
+									"key": "paymentStatus",
+									"value": "Paid"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5000/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": "your_access_token_here",
+			"type": "string"
+		}
+	]
+}

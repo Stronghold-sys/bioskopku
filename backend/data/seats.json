@@ -1,0 +1,1874 @@
+[
+  {
+    "_id": "d0cad9d461ff066cd26058f4",
+    "createdAt": "2026-06-04T11:24:04.145Z",
+    "updatedAt": "2026-06-04T11:24:04.145Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "1c65f536b1aded10c27c968a",
+    "createdAt": "2026-06-04T11:24:04.146Z",
+    "updatedAt": "2026-06-04T11:24:04.146Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "d89e64c1f801a33e126c177d",
+    "createdAt": "2026-06-04T11:24:04.146Z",
+    "updatedAt": "2026-06-04T11:24:04.146Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "384b34c5428b073dc4dd8d59",
+    "createdAt": "2026-06-04T11:24:04.146Z",
+    "updatedAt": "2026-06-04T11:24:04.146Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "3a5afd0d3b91af165ba31f15",
+    "createdAt": "2026-06-04T11:24:04.147Z",
+    "updatedAt": "2026-06-04T11:24:04.147Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "baad2cb237f3ffbbac2fd8ff",
+    "createdAt": "2026-06-04T11:24:04.147Z",
+    "updatedAt": "2026-06-04T11:24:04.147Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "7c9e3f63e3f576c575a0d925",
+    "createdAt": "2026-06-04T11:24:04.148Z",
+    "updatedAt": "2026-06-04T11:24:04.148Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "c05a65fb0eb8f6d673614d2c",
+    "createdAt": "2026-06-04T11:24:04.149Z",
+    "updatedAt": "2026-06-04T11:24:04.149Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "A",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "faa8c256aa7ba812a6f2430f",
+    "createdAt": "2026-06-04T11:24:04.149Z",
+    "updatedAt": "2026-06-04T11:24:04.149Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "ead63eb2803b13e5fa2784d2",
+    "createdAt": "2026-06-04T11:24:04.149Z",
+    "updatedAt": "2026-06-04T11:24:04.149Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "7e79054a3c9a0a790a1b9670",
+    "createdAt": "2026-06-04T11:24:04.150Z",
+    "updatedAt": "2026-06-04T11:24:04.150Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "4e1871e0b45bed8096d68db9",
+    "createdAt": "2026-06-04T11:24:04.150Z",
+    "updatedAt": "2026-06-04T11:24:04.150Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "9ae4311c3a3a751e37ec1813",
+    "createdAt": "2026-06-04T11:24:04.151Z",
+    "updatedAt": "2026-06-04T11:24:04.151Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "28ab6646dc989cae61612850",
+    "createdAt": "2026-06-04T11:24:04.151Z",
+    "updatedAt": "2026-06-04T11:24:04.151Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "9ab54e104638fd8594940b6b",
+    "createdAt": "2026-06-04T11:24:04.151Z",
+    "updatedAt": "2026-06-04T11:24:04.151Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "faeef83cf4b767325b9822d2",
+    "createdAt": "2026-06-04T11:24:04.152Z",
+    "updatedAt": "2026-06-04T11:24:04.152Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "B",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "cfbc0be7a7d8e31cb24c3db7",
+    "createdAt": "2026-06-04T11:24:04.152Z",
+    "updatedAt": "2026-06-04T11:24:04.152Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "bf732664aaa9a159723c1e7b",
+    "createdAt": "2026-06-04T11:24:04.152Z",
+    "updatedAt": "2026-06-04T11:24:04.152Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "59e02e02f4ff7ab316fa1015",
+    "createdAt": "2026-06-04T11:24:04.153Z",
+    "updatedAt": "2026-06-04T11:24:04.153Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "695d27f5f2457370577ec8f5",
+    "createdAt": "2026-06-04T11:24:04.153Z",
+    "updatedAt": "2026-06-04T11:24:04.153Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "7f8b0f07091e00b255aac917",
+    "createdAt": "2026-06-04T11:24:04.154Z",
+    "updatedAt": "2026-06-04T11:24:04.154Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "56cbdb50b4744bf9ba426ef4",
+    "createdAt": "2026-06-04T11:24:04.155Z",
+    "updatedAt": "2026-06-04T11:24:04.155Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "5bf36580462e1691ae4cce0b",
+    "createdAt": "2026-06-04T11:24:04.155Z",
+    "updatedAt": "2026-06-04T11:24:04.155Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "0254a0945f0f76e81d6b6300",
+    "createdAt": "2026-06-04T11:24:04.156Z",
+    "updatedAt": "2026-06-04T11:24:04.156Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "C",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "888fbe682a0d3f78247bb39a",
+    "createdAt": "2026-06-04T11:24:04.156Z",
+    "updatedAt": "2026-06-04T11:24:04.156Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "f7534be2d603aa4c365b37ca",
+    "createdAt": "2026-06-04T11:24:04.156Z",
+    "updatedAt": "2026-06-04T11:24:04.156Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "ff7d0bbe3900c7d752c03b56",
+    "createdAt": "2026-06-04T11:24:04.157Z",
+    "updatedAt": "2026-06-04T11:24:04.157Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "86311397c19c5ebf377064f0",
+    "createdAt": "2026-06-04T11:24:04.158Z",
+    "updatedAt": "2026-06-04T11:24:04.158Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "e794760ed3efa176964bde3e",
+    "createdAt": "2026-06-04T11:24:04.158Z",
+    "updatedAt": "2026-06-04T11:24:04.158Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "ef972765767878974b2f12c4",
+    "createdAt": "2026-06-04T11:24:04.159Z",
+    "updatedAt": "2026-06-04T11:24:04.159Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "89b4d94ad93b6dc8b0a76e14",
+    "createdAt": "2026-06-04T11:24:04.159Z",
+    "updatedAt": "2026-06-04T11:24:04.159Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "cf30d964f1a084e4aa2c90b6",
+    "createdAt": "2026-06-04T11:24:04.160Z",
+    "updatedAt": "2026-06-04T11:24:04.160Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "D",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "610d257e86b395a5177170c9",
+    "createdAt": "2026-06-04T11:24:04.160Z",
+    "updatedAt": "2026-06-04T11:24:04.160Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 1,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "0ff63b74b0b43b6029e67863",
+    "createdAt": "2026-06-04T11:24:04.160Z",
+    "updatedAt": "2026-06-04T11:24:04.160Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 2,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "eded3aced418d3a1279a61ad",
+    "createdAt": "2026-06-04T11:24:04.161Z",
+    "updatedAt": "2026-06-04T11:24:04.161Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 3,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "27f78f67ee52e2acad105165",
+    "createdAt": "2026-06-04T11:24:04.161Z",
+    "updatedAt": "2026-06-04T11:24:04.161Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 4,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "ad78a2028e559f9b4635036c",
+    "createdAt": "2026-06-04T11:24:04.162Z",
+    "updatedAt": "2026-06-04T11:24:04.162Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 5,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "c58042f71f230aeb60852e07",
+    "createdAt": "2026-06-04T11:24:04.162Z",
+    "updatedAt": "2026-06-04T11:24:04.162Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 6,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "49f6771c6308e900d924b0e8",
+    "createdAt": "2026-06-04T11:24:04.163Z",
+    "updatedAt": "2026-06-04T11:24:04.163Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 7,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "0a496f0c91a2524724cf0219",
+    "createdAt": "2026-06-04T11:24:04.163Z",
+    "updatedAt": "2026-06-04T11:24:04.163Z",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "row": "E",
+    "number": 8,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "ef7e93fe91bf1edb6b105d11",
+    "createdAt": "2026-06-04T11:24:04.164Z",
+    "updatedAt": "2026-06-04T11:24:04.164Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "f4e634a10bcb57e4e2d0720f",
+    "createdAt": "2026-06-04T11:24:04.164Z",
+    "updatedAt": "2026-06-04T11:24:04.164Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "3da4cfd7356b3732d8a904da",
+    "createdAt": "2026-06-04T11:24:04.165Z",
+    "updatedAt": "2026-06-04T11:24:04.165Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "765d9f15bba7f3f9fe255c32",
+    "createdAt": "2026-06-04T11:24:04.165Z",
+    "updatedAt": "2026-06-04T11:24:04.165Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "e3e9a8ae6bbbced0796cc26e",
+    "createdAt": "2026-06-04T11:24:04.165Z",
+    "updatedAt": "2026-06-04T11:24:04.165Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "5ce0c4e2554de3cfe24037cf",
+    "createdAt": "2026-06-04T11:24:04.166Z",
+    "updatedAt": "2026-06-04T11:24:04.166Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "af2197f253ae3816a61f5367",
+    "createdAt": "2026-06-04T11:24:04.166Z",
+    "updatedAt": "2026-06-04T11:24:04.166Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "d87bffe22926dc0b56d4523a",
+    "createdAt": "2026-06-04T11:24:04.167Z",
+    "updatedAt": "2026-06-04T11:24:04.167Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "A",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "b5157f780c451e4094352424",
+    "createdAt": "2026-06-04T11:24:04.168Z",
+    "updatedAt": "2026-06-04T11:24:04.168Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "e79438bb0e3b849da8f6636e",
+    "createdAt": "2026-06-04T11:24:04.169Z",
+    "updatedAt": "2026-06-04T11:24:04.169Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "3e812c3090eb01468f216da7",
+    "createdAt": "2026-06-04T11:24:04.169Z",
+    "updatedAt": "2026-06-04T11:24:04.169Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "aa452da32a1b042cf078138b",
+    "createdAt": "2026-06-04T11:24:04.169Z",
+    "updatedAt": "2026-06-04T11:24:04.169Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "ac28d179159455face156eb7",
+    "createdAt": "2026-06-04T11:24:04.170Z",
+    "updatedAt": "2026-06-04T11:24:04.170Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "f9f7793fba1b16e5b69413b0",
+    "createdAt": "2026-06-04T11:24:04.171Z",
+    "updatedAt": "2026-06-04T11:24:04.171Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "6a70c9afac59bd1ea02e9709",
+    "createdAt": "2026-06-04T11:24:04.172Z",
+    "updatedAt": "2026-06-04T11:24:04.172Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "a5db8aa6307b1005b567e250",
+    "createdAt": "2026-06-04T11:24:04.172Z",
+    "updatedAt": "2026-06-04T11:24:04.172Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "B",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "708aecb16623c006086e0fae",
+    "createdAt": "2026-06-04T11:24:04.172Z",
+    "updatedAt": "2026-06-04T11:24:04.172Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "4a36d60ceefbe78486e3fba8",
+    "createdAt": "2026-06-04T11:24:04.173Z",
+    "updatedAt": "2026-06-04T11:24:04.173Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "414e2e0d457457bb87743ea2",
+    "createdAt": "2026-06-04T11:24:04.173Z",
+    "updatedAt": "2026-06-04T11:24:04.173Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "4a9e62541f6e03be4812f9a4",
+    "createdAt": "2026-06-04T11:24:04.174Z",
+    "updatedAt": "2026-06-04T11:24:04.174Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "db9c0329c6d35ae94fc3b089",
+    "createdAt": "2026-06-04T11:24:04.174Z",
+    "updatedAt": "2026-06-04T11:24:04.174Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "0f31b3b12ed52be33579f2c7",
+    "createdAt": "2026-06-04T11:24:04.175Z",
+    "updatedAt": "2026-06-04T11:24:04.175Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "778a03d5c0941f02fe1d688a",
+    "createdAt": "2026-06-04T11:24:04.176Z",
+    "updatedAt": "2026-06-04T11:24:04.176Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "f3ff9c3a6b790fedeb2b4ff5",
+    "createdAt": "2026-06-04T11:24:04.176Z",
+    "updatedAt": "2026-06-04T11:24:04.176Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "C",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "e6ff3b02200071a90a4ca0f4",
+    "createdAt": "2026-06-04T11:24:04.177Z",
+    "updatedAt": "2026-06-04T11:24:04.177Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "a137685c1bc4de57fa27634a",
+    "createdAt": "2026-06-04T11:24:04.178Z",
+    "updatedAt": "2026-06-04T11:24:04.178Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "4325ba83b40fb77f7d9687ef",
+    "createdAt": "2026-06-04T11:24:04.178Z",
+    "updatedAt": "2026-06-04T11:24:04.178Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "ec248897cffa2ad59414a621",
+    "createdAt": "2026-06-04T11:24:04.179Z",
+    "updatedAt": "2026-06-04T11:24:04.179Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "e03a9f6389c65d7f88f9feed",
+    "createdAt": "2026-06-04T11:24:04.180Z",
+    "updatedAt": "2026-06-04T11:24:04.180Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "0fd90599330ce47b8c4ebc3a",
+    "createdAt": "2026-06-04T11:24:04.180Z",
+    "updatedAt": "2026-06-04T11:24:04.180Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "523dfbd93e25c3654ca7e228",
+    "createdAt": "2026-06-04T11:24:04.180Z",
+    "updatedAt": "2026-06-04T11:24:04.180Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "7083121e28be332fb86ffb03",
+    "createdAt": "2026-06-04T11:24:04.181Z",
+    "updatedAt": "2026-06-04T11:24:04.181Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "D",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "132657df252ad91cd83a4878",
+    "createdAt": "2026-06-04T11:24:04.181Z",
+    "updatedAt": "2026-06-04T11:24:04.181Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 1,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "e6d785d1f6df02084fdfaae0",
+    "createdAt": "2026-06-04T11:24:04.182Z",
+    "updatedAt": "2026-06-04T11:24:04.182Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 2,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "8dd11ac5551a79d76221f692",
+    "createdAt": "2026-06-04T11:24:04.182Z",
+    "updatedAt": "2026-06-04T11:24:04.182Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 3,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "1fdbe0382ec4f5b0ff1b74fa",
+    "createdAt": "2026-06-04T11:24:04.182Z",
+    "updatedAt": "2026-06-04T11:24:04.182Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 4,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "f019b3b4a7c5057b08a9cfbd",
+    "createdAt": "2026-06-04T11:24:04.183Z",
+    "updatedAt": "2026-06-04T11:24:04.183Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 5,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "8aad1ac918bb2828b5462f6c",
+    "createdAt": "2026-06-04T11:24:04.183Z",
+    "updatedAt": "2026-06-04T11:24:04.183Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 6,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "754eaad5cc1322afee665953",
+    "createdAt": "2026-06-04T11:24:04.184Z",
+    "updatedAt": "2026-06-04T11:24:04.184Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 7,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "1dddb047b21f0639454872fb",
+    "createdAt": "2026-06-04T11:24:04.184Z",
+    "updatedAt": "2026-06-04T11:24:04.184Z",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "row": "E",
+    "number": 8,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "d197120537a723584d2323ce",
+    "createdAt": "2026-06-04T11:24:04.185Z",
+    "updatedAt": "2026-06-04T11:24:04.185Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "84e01fd9ba3a62979e8e6a3c",
+    "createdAt": "2026-06-04T11:24:04.186Z",
+    "updatedAt": "2026-06-04T11:24:04.186Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "8cb92f4f4d95af319312341a",
+    "createdAt": "2026-06-04T11:24:04.186Z",
+    "updatedAt": "2026-06-04T11:24:04.186Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "0ca907786722787fe1d8d6a4",
+    "createdAt": "2026-06-04T11:24:04.187Z",
+    "updatedAt": "2026-06-04T11:24:04.187Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "02ad3b67ab98d958ef89a9f4",
+    "createdAt": "2026-06-04T11:24:04.188Z",
+    "updatedAt": "2026-06-04T11:24:04.188Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "fe666f1975d13f3cc99e24a8",
+    "createdAt": "2026-06-04T11:24:04.190Z",
+    "updatedAt": "2026-06-04T11:24:04.190Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "1802c730745c6fc517329ee3",
+    "createdAt": "2026-06-04T11:24:04.190Z",
+    "updatedAt": "2026-06-04T11:24:04.190Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "c13231f19331bbbe9de9ebde",
+    "createdAt": "2026-06-04T11:24:04.191Z",
+    "updatedAt": "2026-06-04T11:24:04.191Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "c48557644ae8ba479903efd4",
+    "createdAt": "2026-06-04T11:24:04.192Z",
+    "updatedAt": "2026-06-04T11:24:04.192Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "79260a557791af158879e2d1",
+    "createdAt": "2026-06-04T11:24:04.193Z",
+    "updatedAt": "2026-06-04T11:24:04.193Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "db929697d85f3d6db887de87",
+    "createdAt": "2026-06-04T11:24:04.194Z",
+    "updatedAt": "2026-06-04T11:24:04.194Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "45109e55a18c9239e4a3d011",
+    "createdAt": "2026-06-04T11:24:04.195Z",
+    "updatedAt": "2026-06-04T11:24:04.195Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "9b7e15c4ab9dbb26e5a13f95",
+    "createdAt": "2026-06-04T11:24:04.196Z",
+    "updatedAt": "2026-06-04T11:24:04.196Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "f62fec9fbb895a9bb873051f",
+    "createdAt": "2026-06-04T11:24:04.196Z",
+    "updatedAt": "2026-06-04T11:24:04.196Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "7e9e2d807c89dc8ee876ca97",
+    "createdAt": "2026-06-04T11:24:04.197Z",
+    "updatedAt": "2026-06-04T11:24:04.197Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "71e413532d6ed4a6e7b1bc6c",
+    "createdAt": "2026-06-04T11:24:04.199Z",
+    "updatedAt": "2026-06-04T11:24:04.199Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "08be11f06ea7bf01111981f9",
+    "createdAt": "2026-06-04T11:24:04.200Z",
+    "updatedAt": "2026-06-04T11:24:04.200Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "c28b7800b2d65b1a439cf83c",
+    "createdAt": "2026-06-04T11:24:04.201Z",
+    "updatedAt": "2026-06-04T11:24:04.201Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "d18d8e4225e164c9cb4de204",
+    "createdAt": "2026-06-04T11:24:04.201Z",
+    "updatedAt": "2026-06-04T11:24:04.201Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "7e33df983518d64542d021c2",
+    "createdAt": "2026-06-04T11:24:04.202Z",
+    "updatedAt": "2026-06-04T11:24:04.202Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "c329eb7d8e154c42da29bf3c",
+    "createdAt": "2026-06-04T11:24:04.203Z",
+    "updatedAt": "2026-06-04T11:24:04.203Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "f042ebe2d76b3d3247056073",
+    "createdAt": "2026-06-04T11:24:04.204Z",
+    "updatedAt": "2026-06-04T11:24:04.204Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "f45d86ead5a576501f4dbe9e",
+    "createdAt": "2026-06-04T11:24:04.205Z",
+    "updatedAt": "2026-06-04T11:24:04.205Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "b182384b21c731ed4d55ae00",
+    "createdAt": "2026-06-04T11:24:04.206Z",
+    "updatedAt": "2026-06-04T11:24:04.206Z",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "5e104f0587003e94dc9fcf8d",
+    "createdAt": "2026-06-04T11:24:04.208Z",
+    "updatedAt": "2026-06-04T11:24:04.209Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "e0aa690d4300eaf1e4551fce",
+    "createdAt": "2026-06-04T11:24:04.210Z",
+    "updatedAt": "2026-06-04T11:24:04.210Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "077c06748d0523fae5488d1d",
+    "createdAt": "2026-06-04T11:24:04.211Z",
+    "updatedAt": "2026-06-04T11:24:04.211Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "232327f0d4d288dcdda08e6f",
+    "createdAt": "2026-06-04T11:24:04.211Z",
+    "updatedAt": "2026-06-04T11:24:04.211Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "7868e10eb5c0e18ff1f580e0",
+    "createdAt": "2026-06-04T11:24:04.212Z",
+    "updatedAt": "2026-06-04T11:24:04.212Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "5b0b0f68d8e55849ea32fcb1",
+    "createdAt": "2026-06-04T11:24:04.213Z",
+    "updatedAt": "2026-06-04T11:24:04.213Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "68f71bf0a4ed7f91ce33e957",
+    "createdAt": "2026-06-04T11:24:04.214Z",
+    "updatedAt": "2026-06-04T11:24:04.214Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "b66a603e5b99d14a92122e99",
+    "createdAt": "2026-06-04T11:24:04.215Z",
+    "updatedAt": "2026-06-04T11:24:04.215Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "A",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "9e3993f856f8b642f2d62bfa",
+    "createdAt": "2026-06-04T11:24:04.216Z",
+    "updatedAt": "2026-06-04T11:24:04.216Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "46828c29d42bbc4aa18eee61",
+    "createdAt": "2026-06-04T11:24:04.217Z",
+    "updatedAt": "2026-06-04T11:24:04.217Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "9e59cff4d3919bccf41fe7fd",
+    "createdAt": "2026-06-04T11:24:04.218Z",
+    "updatedAt": "2026-06-04T11:24:04.218Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "318e46c88f3df3c70516203f",
+    "createdAt": "2026-06-04T11:24:04.219Z",
+    "updatedAt": "2026-06-04T11:24:04.219Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "e24448b0c6fe44caf6c95e6c",
+    "createdAt": "2026-06-04T11:24:04.220Z",
+    "updatedAt": "2026-06-04T11:24:04.220Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "277d069832bff9d074d24316",
+    "createdAt": "2026-06-04T11:24:04.221Z",
+    "updatedAt": "2026-06-04T11:24:04.221Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "10b822a79cd54691d75090a8",
+    "createdAt": "2026-06-04T11:24:04.222Z",
+    "updatedAt": "2026-06-04T11:24:04.222Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "a082df72afc553b043fdca59",
+    "createdAt": "2026-06-04T11:24:04.223Z",
+    "updatedAt": "2026-06-04T11:24:04.223Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "B",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "621392ec71d42a31755e6708",
+    "createdAt": "2026-06-04T11:24:04.224Z",
+    "updatedAt": "2026-06-04T11:24:04.224Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "31ff82e5d16f8ec7517ed2b1",
+    "createdAt": "2026-06-04T11:24:04.225Z",
+    "updatedAt": "2026-06-04T11:24:04.225Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "896ba70b722c8cd1b423939f",
+    "createdAt": "2026-06-04T11:24:04.226Z",
+    "updatedAt": "2026-06-04T11:24:04.226Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "f765ac1d2cde7384b1e22021",
+    "createdAt": "2026-06-04T11:24:04.226Z",
+    "updatedAt": "2026-06-04T11:24:04.226Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "70cdf108574a8d2357ef719c",
+    "createdAt": "2026-06-04T11:24:04.227Z",
+    "updatedAt": "2026-06-04T11:24:04.227Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "d7cefe4bed6273707a907572",
+    "createdAt": "2026-06-04T11:24:04.228Z",
+    "updatedAt": "2026-06-04T11:24:04.228Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "31b4fe4d905dab10ce3a84e9",
+    "createdAt": "2026-06-04T11:24:04.229Z",
+    "updatedAt": "2026-06-04T11:24:04.229Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "100e9e0fb85369e57e5e4fbd",
+    "createdAt": "2026-06-04T11:24:04.230Z",
+    "updatedAt": "2026-06-04T11:24:04.230Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "C",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "7bdc0363b71ecfa2f7a5ccac",
+    "createdAt": "2026-06-04T11:24:04.231Z",
+    "updatedAt": "2026-06-04T11:24:04.231Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "2602142192283500c1ac3745",
+    "createdAt": "2026-06-04T11:24:04.232Z",
+    "updatedAt": "2026-06-04T11:24:04.232Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "a3064bb1fefb8c1ae4e6909f",
+    "createdAt": "2026-06-04T11:24:04.233Z",
+    "updatedAt": "2026-06-04T11:24:04.233Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "6b4f3601e4df896732b292b0",
+    "createdAt": "2026-06-04T11:24:04.234Z",
+    "updatedAt": "2026-06-04T11:24:04.234Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "1f63026268ee219c78011c02",
+    "createdAt": "2026-06-04T11:24:04.235Z",
+    "updatedAt": "2026-06-04T11:24:04.235Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "b8c08c3660c74a1a66c94d48",
+    "createdAt": "2026-06-04T11:24:04.236Z",
+    "updatedAt": "2026-06-04T11:24:04.236Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "a8b513f07ab43a00780ab91c",
+    "createdAt": "2026-06-04T11:24:04.236Z",
+    "updatedAt": "2026-06-04T11:24:04.237Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "8f873dc87e057a2169522ff2",
+    "createdAt": "2026-06-04T11:24:04.238Z",
+    "updatedAt": "2026-06-04T11:24:04.238Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "D",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "a97350e1360938e945103cd2",
+    "createdAt": "2026-06-04T11:24:04.239Z",
+    "updatedAt": "2026-06-04T11:24:04.239Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 1,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "f4838bc7214bc02e330fecbd",
+    "createdAt": "2026-06-04T11:24:04.240Z",
+    "updatedAt": "2026-06-04T11:24:04.240Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 2,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "63b00eb4b9e645b845ff499b",
+    "createdAt": "2026-06-04T11:24:04.241Z",
+    "updatedAt": "2026-06-04T11:24:04.241Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 3,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "a41002116486e60f64e40ba2",
+    "createdAt": "2026-06-04T11:24:04.242Z",
+    "updatedAt": "2026-06-04T11:24:04.242Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 4,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "26275b16315777305fa6bd11",
+    "createdAt": "2026-06-04T11:24:04.243Z",
+    "updatedAt": "2026-06-04T11:24:04.243Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 5,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "a051a4b2e05893792340cdb4",
+    "createdAt": "2026-06-04T11:24:04.244Z",
+    "updatedAt": "2026-06-04T11:24:04.244Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 6,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "6ad9935cf0cb9f26e6fad86e",
+    "createdAt": "2026-06-04T11:24:04.245Z",
+    "updatedAt": "2026-06-04T11:24:04.245Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 7,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "7367cda836dee3abf8ff07bf",
+    "createdAt": "2026-06-04T11:24:04.246Z",
+    "updatedAt": "2026-06-04T11:24:04.246Z",
+    "studioId": "877cc6fa934f790a812a478f",
+    "row": "E",
+    "number": 8,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "cac7179f2ad6d02dde6b0e70",
+    "createdAt": "2026-06-04T11:24:04.247Z",
+    "updatedAt": "2026-06-04T11:24:04.247Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "7e98dff3dc1510ce88426960",
+    "createdAt": "2026-06-04T11:24:04.248Z",
+    "updatedAt": "2026-06-04T11:24:04.248Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "23532131ef6384f78c6410f0",
+    "createdAt": "2026-06-04T11:24:04.250Z",
+    "updatedAt": "2026-06-04T11:24:04.250Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "f291d28e61d1a8fdcbb0e4af",
+    "createdAt": "2026-06-04T11:24:04.251Z",
+    "updatedAt": "2026-06-04T11:24:04.251Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "3738f40582ff9bff43e24d68",
+    "createdAt": "2026-06-04T11:24:04.252Z",
+    "updatedAt": "2026-06-04T11:24:04.252Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "28c0eda5c8d25e107f46bbfa",
+    "createdAt": "2026-06-04T11:24:04.253Z",
+    "updatedAt": "2026-06-04T11:24:04.253Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "e9b20c595f4b2cd18f2c68c8",
+    "createdAt": "2026-06-04T11:24:04.253Z",
+    "updatedAt": "2026-06-04T11:24:04.253Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "1683a0492ba3bbd8d0c25063",
+    "createdAt": "2026-06-04T11:24:04.255Z",
+    "updatedAt": "2026-06-04T11:24:04.255Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "A",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "9a9614c1032edee97acc5615",
+    "createdAt": "2026-06-04T11:24:04.256Z",
+    "updatedAt": "2026-06-04T11:24:04.256Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "38b1a558067c51b0da0ff1dd",
+    "createdAt": "2026-06-04T11:24:04.257Z",
+    "updatedAt": "2026-06-04T11:24:04.257Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "e40a7501c8976a3bc99e46bd",
+    "createdAt": "2026-06-04T11:24:04.259Z",
+    "updatedAt": "2026-06-04T11:24:04.259Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "989f30d4c2a215dd026b9148",
+    "createdAt": "2026-06-04T11:24:04.260Z",
+    "updatedAt": "2026-06-04T11:24:04.260Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "774a66e4d74bc30d08c6be84",
+    "createdAt": "2026-06-04T11:24:04.261Z",
+    "updatedAt": "2026-06-04T11:24:04.261Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "b4309a880dcbf0e1f9204a8f",
+    "createdAt": "2026-06-04T11:24:04.262Z",
+    "updatedAt": "2026-06-04T11:24:04.262Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "193a4592da68289cbdeead2a",
+    "createdAt": "2026-06-04T11:24:04.263Z",
+    "updatedAt": "2026-06-04T11:24:04.263Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "ae62b88290fe448e72036ebb",
+    "createdAt": "2026-06-04T11:24:04.264Z",
+    "updatedAt": "2026-06-04T11:24:04.264Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "B",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "063db7b4040d5f1cc7e659eb",
+    "createdAt": "2026-06-04T11:24:04.265Z",
+    "updatedAt": "2026-06-04T11:24:04.265Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "fc5e21523b0d70a062d39360",
+    "createdAt": "2026-06-04T11:24:04.266Z",
+    "updatedAt": "2026-06-04T11:24:04.266Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "5513ef64ac997d0a38f7df6b",
+    "createdAt": "2026-06-04T11:24:04.267Z",
+    "updatedAt": "2026-06-04T11:24:04.267Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "37584f447d801d7ebe8d1d53",
+    "createdAt": "2026-06-04T11:24:04.268Z",
+    "updatedAt": "2026-06-04T11:24:04.268Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "c4df0486b6e8528d821f1f1b",
+    "createdAt": "2026-06-04T11:24:04.269Z",
+    "updatedAt": "2026-06-04T11:24:04.269Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "28495a3d1f07bd6b124f250e",
+    "createdAt": "2026-06-04T11:24:04.270Z",
+    "updatedAt": "2026-06-04T11:24:04.270Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "fcf0e5393c387b154ada502b",
+    "createdAt": "2026-06-04T11:24:04.272Z",
+    "updatedAt": "2026-06-04T11:24:04.272Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "b55cf043fff4917971894296",
+    "createdAt": "2026-06-04T11:24:04.273Z",
+    "updatedAt": "2026-06-04T11:24:04.273Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "C",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "5ec706ccdb841c601a1885b5",
+    "createdAt": "2026-06-04T11:24:04.273Z",
+    "updatedAt": "2026-06-04T11:24:04.273Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "f9943b9e188eb399b45b95b0",
+    "createdAt": "2026-06-04T11:24:04.274Z",
+    "updatedAt": "2026-06-04T11:24:04.274Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "7342114a16ff736c000c9e55",
+    "createdAt": "2026-06-04T11:24:04.275Z",
+    "updatedAt": "2026-06-04T11:24:04.275Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "98d9326467ce4fed142e8031",
+    "createdAt": "2026-06-04T11:24:04.276Z",
+    "updatedAt": "2026-06-04T11:24:04.276Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "c3daeb10b394b01f613d6ad0",
+    "createdAt": "2026-06-04T11:24:04.278Z",
+    "updatedAt": "2026-06-04T11:24:04.278Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "cde2f2cf328185de4d78779b",
+    "createdAt": "2026-06-04T11:24:04.279Z",
+    "updatedAt": "2026-06-04T11:24:04.279Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "7b12b08968d444957094a8de",
+    "createdAt": "2026-06-04T11:24:04.280Z",
+    "updatedAt": "2026-06-04T11:24:04.280Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 7,
+    "type": "Regular"
+  },
+  {
+    "_id": "94ee02076b1aaaf5eb83c997",
+    "createdAt": "2026-06-04T11:24:04.281Z",
+    "updatedAt": "2026-06-04T11:24:04.281Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "D",
+    "number": 8,
+    "type": "Regular"
+  },
+  {
+    "_id": "4d913732ac5d4a353fdd2ee1",
+    "createdAt": "2026-06-04T11:24:04.282Z",
+    "updatedAt": "2026-06-04T11:24:04.282Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 1,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "16f70f5b3baa743beff8655d",
+    "createdAt": "2026-06-04T11:24:04.283Z",
+    "updatedAt": "2026-06-04T11:24:04.283Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 2,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "76e842b6ed3b34890073ca11",
+    "createdAt": "2026-06-04T11:24:04.284Z",
+    "updatedAt": "2026-06-04T11:24:04.284Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 3,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "2345ad5f89971221a75eabcc",
+    "createdAt": "2026-06-04T11:24:04.285Z",
+    "updatedAt": "2026-06-04T11:24:04.285Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 4,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "338c226bbeecbe8d8ddcdac2",
+    "createdAt": "2026-06-04T11:24:04.286Z",
+    "updatedAt": "2026-06-04T11:24:04.286Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 5,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "cb9b43f4cbf223528bc9859d",
+    "createdAt": "2026-06-04T11:24:04.287Z",
+    "updatedAt": "2026-06-04T11:24:04.287Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 6,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "f6b2f42b6d79f27f97b801c4",
+    "createdAt": "2026-06-04T11:24:04.289Z",
+    "updatedAt": "2026-06-04T11:24:04.289Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 7,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "5f2b938f08cc6ea4e1dcef87",
+    "createdAt": "2026-06-04T11:24:04.290Z",
+    "updatedAt": "2026-06-04T11:24:04.290Z",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "row": "E",
+    "number": 8,
+    "type": "Sweetbox"
+  },
+  {
+    "_id": "6be8e6ba54b28f8dae2dc775",
+    "createdAt": "2026-06-04T11:24:04.292Z",
+    "updatedAt": "2026-06-04T11:24:04.292Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "882838891420673914730d64",
+    "createdAt": "2026-06-04T11:24:04.292Z",
+    "updatedAt": "2026-06-04T11:24:04.292Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "f8d58ecf323138cb1f5262e4",
+    "createdAt": "2026-06-04T11:24:04.293Z",
+    "updatedAt": "2026-06-04T11:24:04.293Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "5483c68aca1ff29a0819f809",
+    "createdAt": "2026-06-04T11:24:04.294Z",
+    "updatedAt": "2026-06-04T11:24:04.294Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "73eef5bc81168d4bbdc92d21",
+    "createdAt": "2026-06-04T11:24:04.295Z",
+    "updatedAt": "2026-06-04T11:24:04.295Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "f3e57b7c79df6bc96a0296c9",
+    "createdAt": "2026-06-04T11:24:04.296Z",
+    "updatedAt": "2026-06-04T11:24:04.296Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "A",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "f89742c0cb8b320d38ee7e2e",
+    "createdAt": "2026-06-04T11:24:04.297Z",
+    "updatedAt": "2026-06-04T11:24:04.297Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "ab70f817225b68235c59960c",
+    "createdAt": "2026-06-04T11:24:04.298Z",
+    "updatedAt": "2026-06-04T11:24:04.298Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "31d2bfadedab2ad174fa15f7",
+    "createdAt": "2026-06-04T11:24:04.300Z",
+    "updatedAt": "2026-06-04T11:24:04.300Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "999d23235b25179670fe3b56",
+    "createdAt": "2026-06-04T11:24:04.300Z",
+    "updatedAt": "2026-06-04T11:24:04.300Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "e62652a3b4585031416c5bb9",
+    "createdAt": "2026-06-04T11:24:04.302Z",
+    "updatedAt": "2026-06-04T11:24:04.302Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "1c7138acb44499c2f7602c03",
+    "createdAt": "2026-06-04T11:24:04.303Z",
+    "updatedAt": "2026-06-04T11:24:04.303Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "B",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "4d063403be706d862845ab31",
+    "createdAt": "2026-06-04T11:24:04.304Z",
+    "updatedAt": "2026-06-04T11:24:04.304Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "fa094f2deb301af3aaae5c4c",
+    "createdAt": "2026-06-04T11:24:04.305Z",
+    "updatedAt": "2026-06-04T11:24:04.305Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "27d6cac8e7f7333b5c96488d",
+    "createdAt": "2026-06-04T11:24:04.307Z",
+    "updatedAt": "2026-06-04T11:24:04.307Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "84bec29d0b419a5d8ff81be4",
+    "createdAt": "2026-06-04T11:24:04.308Z",
+    "updatedAt": "2026-06-04T11:24:04.308Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "50d3ec2e3a59868b15d72acc",
+    "createdAt": "2026-06-04T11:24:04.309Z",
+    "updatedAt": "2026-06-04T11:24:04.309Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "f34f6a2fa7eb12ef0fa7be6d",
+    "createdAt": "2026-06-04T11:24:04.310Z",
+    "updatedAt": "2026-06-04T11:24:04.310Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "C",
+    "number": 6,
+    "type": "Regular"
+  },
+  {
+    "_id": "8756b4deb2b5e2c1069a373d",
+    "createdAt": "2026-06-04T11:24:04.311Z",
+    "updatedAt": "2026-06-04T11:24:04.311Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 1,
+    "type": "Regular"
+  },
+  {
+    "_id": "b2ff12c8a0b2a853d86f0556",
+    "createdAt": "2026-06-04T11:24:04.312Z",
+    "updatedAt": "2026-06-04T11:24:04.312Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 2,
+    "type": "Regular"
+  },
+  {
+    "_id": "cbde6ac489dda4aa43da062c",
+    "createdAt": "2026-06-04T11:24:04.313Z",
+    "updatedAt": "2026-06-04T11:24:04.313Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 3,
+    "type": "Regular"
+  },
+  {
+    "_id": "687fe174cc00121a8f5f3de5",
+    "createdAt": "2026-06-04T11:24:04.314Z",
+    "updatedAt": "2026-06-04T11:24:04.314Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 4,
+    "type": "Regular"
+  },
+  {
+    "_id": "581ad481b76100c094f61928",
+    "createdAt": "2026-06-04T11:24:04.315Z",
+    "updatedAt": "2026-06-04T11:24:04.315Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 5,
+    "type": "Regular"
+  },
+  {
+    "_id": "307895d2bf4913e6eaf31a24",
+    "createdAt": "2026-06-04T11:24:04.316Z",
+    "updatedAt": "2026-06-04T11:24:04.316Z",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "row": "D",
+    "number": 6,
+    "type": "Regular"
+  }
+]

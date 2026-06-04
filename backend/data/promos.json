@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "9ffdb31aadba8314346d604f",
+    "createdAt": "2026-06-04T11:24:04.546Z",
+    "updatedAt": "2026-06-04T11:24:04.546Z",
+    "code": "BIOSKOPKUSTART",
+    "discountPercentage": 20,
+    "description": "Dapatkan diskon 20% untuk pembelian tiket pertama Anda dengan BioskopKu. Terbatas untuk pengguna baru!",
+    "posterUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500&auto=format&fit=crop&q=60",
+    "maxDiscount": 20000,
+    "expiryDate": "2026-12-31"
+  },
+  {
+    "_id": "c2b1e61eb95c2a49450ecbb5",
+    "createdAt": "2026-06-04T11:24:04.547Z",
+    "updatedAt": "2026-06-04T11:24:04.547Z",
+    "code": "WEEKENDSERU",
+    "discountPercentage": 15,
+    "description": "Jadikan akhir pekan Anda lebih seru dengan diskon 15% untuk semua studio Regular dan IMAX.",
+    "posterUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500&auto=format&fit=crop&q=60",
+    "maxDiscount": 15000,
+    "expiryDate": "2026-12-31"
+  },
+  {
+    "_id": "a36a58df2824e45e091a23ae",
+    "createdAt": "2026-06-04T11:24:04.548Z",
+    "updatedAt": "2026-06-04T11:24:04.548Z",
+    "code": "CINEPREMIUM",
+    "discountPercentage": 25,
+    "description": "Diskon eksklusif 25% untuk studio kelas Premiere. Nikmati kenyamanan menonton terbaik.",
+    "posterUrl": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&auto=format&fit=crop&q=60",
+    "maxDiscount": 30000,
+    "expiryDate": "2026-12-31"
+  }
+]

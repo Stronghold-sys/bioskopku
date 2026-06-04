@@ -1,0 +1,362 @@
+[
+  {
+    "title": "Agak Laen",
+    "genre": "Comedy, Horror, Indonesia",
+    "duration": 119,
+    "rating": "PG-13",
+    "releaseDate": "2026-06-03",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/lUOwyPbDD9Agl3pHQVHGbZE0TvI.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/xrtyHqXAjU4",
+    "synopsis": "Empat sekawan penjaga rumah hantu di pasar malam berusaha mencari cara baru menakuti pengunjung agar tidak bangkrut. Namun, sebuah kecelakaan mengakibatkan salah satu pengunjung meninggal dunia dan dikubur di dalam rumah hantu tersebut."
+  },
+  {
+    "title": "KKN di Desa Penari",
+    "genre": "Horror, Mystery, Indonesia",
+    "duration": 130,
+    "rating": "R",
+    "releaseDate": "2026-05-31",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/63InZxeGgfNQCoWkImR14fB99AY.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/01BPk6M37qs",
+    "synopsis": "Enam mahasiswa yang melaksanakan KKN di sebuah desa terpencil harus menghadapi serangkaian teror mistis setelah melanggar aturan adat dari penari misterius bernama Badarawuhi."
+  },
+  {
+    "title": "Pengabdi Setan",
+    "genre": "Horror, Mystery, Indonesia",
+    "duration": 107,
+    "rating": "R",
+    "releaseDate": "2026-05-28",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/aDloQdsFgA6WhlFeoJej8rNxthA.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/ng4e2gYXW8A",
+    "synopsis": "Setelah ibu meninggal dunia akibat penyakit misterius selama bertahun-tahun, bapak memutuskan pergi ke luar kota. Tak lama kemudian, anak-anak merasa bahwa ibu kembali ke rumah menemui mereka."
+  },
+  {
+    "title": "Pengabdi Setan 2: Communion",
+    "genre": "Horror, Mystery, Thriller, Indonesia",
+    "duration": 119,
+    "rating": "R",
+    "releaseDate": "2026-05-25",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xQNMM3u6srkhM8bdTCKVTFzyCF1.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/uBL3Ci6lbBU",
+    "synopsis": "Tinggal di sebuah rumah susun yang kumuh di utara Jakarta, Rini dan keluarganya kembali diteror oleh kekuatan gelap masa lalu ibu mereka pada suatu malam badai yang menegangkan."
+  },
+  {
+    "title": "Siksa Kubur",
+    "genre": "Horror, Thriller, Drama, Indonesia",
+    "duration": 117,
+    "rating": "R",
+    "releaseDate": "2026-05-22",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/sDaiRx3OWvCOo1vLoEpdedLeVzY.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/C-iH2aQ-ewY",
+    "synopsis": "Setelah orang tuanya tewas dalam serangan bom bunuh diri, Sita menjadi tidak percaya pada agama dan bertekad mencari orang paling berdosa untuk membuktikan bahwa siksa kubur tidak ada."
+  },
+  {
+    "title": "Laskar Pelangi",
+    "genre": "Drama, Family, Indonesia",
+    "duration": 124,
+    "rating": "SU",
+    "releaseDate": "2026-05-19",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qoiVrVK09K7GQfrTnRUcAclu3L.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/8ZYOqARRTng",
+    "synopsis": "Kisah perjuangan dua guru inspiratif bersama sepuluh murid berbakat di sebuah sekolah miskin di pulau Belitung demi meraih mimpi dan pendidikan yang layak."
+  },
+  {
+    "title": "Habibie & Ainun",
+    "genre": "Drama, Romance, Biography, Indonesia",
+    "duration": 118,
+    "rating": "SU",
+    "releaseDate": "2026-05-16",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/eOdYhBFF7vE5v83KVVQfDEyLgEu.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/DlU_FyHXS7M",
+    "synopsis": "Kisah cinta sejati antara Presiden ketiga Indonesia, BJ Habibie, dan istrinya, Ainun Habibie, mulai dari masa sekolah hingga perjuangan maut memisahkan mereka."
+  },
+  {
+    "title": "Dilan 1990",
+    "genre": "Drama, Romance, Indonesia",
+    "duration": 110,
+    "rating": "PG-13",
+    "releaseDate": "2026-05-13",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tpTMd2DgdeIAbwGd0zEdq21tTmq.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/XtFI7SNtVpY",
+    "synopsis": "Milea bertemu dengan Dilan, anggota geng motor yang eksentrik di sebuah SMA di Bandung pada tahun 1990. Pendekatan unik Dilan berhasil memikat hati Milea."
+  },
+  {
+    "title": "Dilan 1991",
+    "genre": "Drama, Romance, Indonesia",
+    "duration": 121,
+    "rating": "PG-13",
+    "releaseDate": "2026-05-10",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/jvhtHrO4g767iInsfLm9USy47mH.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/nwhB2Hb7g5c",
+    "synopsis": "Kelanjutan hubungan asmara antara Dilan dan Milea yang menghadapi cobaan berat karena keterlibatan Dilan yang tiada henti dalam geng motor Bandung."
+  },
+  {
+    "title": "Milea: Suara dari Dilan",
+    "genre": "Drama, Romance, Indonesia",
+    "duration": 102,
+    "rating": "PG-13",
+    "releaseDate": "2026-05-07",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tRs5EYnviBBn79lQwGW2JLZp93v.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/C2yFJaXmdQs",
+    "synopsis": "Kisah asmara ikonik Dilan dan Milea yang diceritakan kembali dari sudut pandang Dilan, mengungkap rahasia dan perasaan terpendamnya."
+  },
+  {
+    "title": "The Raid: Redemption",
+    "genre": "Action, Thriller, Indonesia",
+    "duration": 101,
+    "rating": "R",
+    "releaseDate": "2026-05-04",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/Abnm1Ws3JH0ReCfEhLMPwPcMcGO.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/GDYwcjhvD-Y",
+    "synopsis": "Sebuah tim SWAT elit terperangkap di dalam gedung apartemen berlantai 30 yang dikuasai oleh gembong narkoba kejam bersama seluruh pasukan pembunuhnya."
+  },
+  {
+    "title": "Sewu Dino",
+    "genre": "Horror, Mystery, Indonesia",
+    "duration": 121,
+    "rating": "R",
+    "releaseDate": "2026-05-01",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mLH6xpgaxWskGaWlhTILIUwjrVm.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/12sXNFbQa6I",
+    "synopsis": "Sri diterima bekerja di keluarga Atmojo untuk merawat Dela Atmojo, seorang gadis muda yang terkena santet 1000 hari mengerikan. Sri harus bertahan hidup dalam ritual mematikan."
+  },
+  {
+    "title": "Inception",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 148,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-28",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/cdx31ak4KbQ",
+    "synopsis": "Dom Cobb adalah pencuri terampil yang menyusup ke alam bawah sadar targetnya melalui mimpi untuk mencuri rahasia berharga perusahaan."
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Sci-Fi, Drama, Adventure, Luar Negeri",
+    "duration": 169,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-25",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/LY19rHKAaAg",
+    "synopsis": "Sekelompok penjelajah luar angkasa melakukan perjalanan melalui lubang cacing demi mencari planet baru untuk kelangsungan hidup umat manusia."
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Action, Crime, Drama, Luar Negeri",
+    "duration": 152,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-22",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/_PZpmTj1Q8Q",
+    "synopsis": "Batman menghadapi Joker, seorang dalang kriminal psikopat yang ingin melepaskan anarki di kota Gotham dan menghancurkan moral sang pelindung."
+  },
+  {
+    "title": "Dune",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 155,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-19",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/w0HgHet0sxg",
+    "synopsis": "Paul Atreides, seorang pemuda berbakat dan pewaris takhta, harus melakukan perjalanan ke planet paling berbahaya di alam semesta demi mengamankan masa depan keluarga dan rakyatnya."
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 181,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-16",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/AMSITikqKiM",
+    "synopsis": "Setelah peristiwa pemusnahan Thanos yang menyapu setengah populasi alam semesta, para Avengers berkumpul kembali untuk memutarbalikkan keadaan."
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 149,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-13",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/QwievZ1Tx-8",
+    "synopsis": "Avengers dan sekutu mereka harus bersedia mengorbankan segalanya dalam upaya mengalahkan Thanos yang kuat sebelum ia berhasil mengumpulkan seluruh Infinity Stones."
+  },
+  {
+    "title": "Avatar",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 162,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-10",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/jm2sNLIPPvA",
+    "synopsis": "Seorang marinir lumpuh dikirim ke bulan Pandora dalam misi unik, namun ia menjadi dilema antara mengikuti perintah atau melindungi peradaban alien eksotis yang tinggal di sana."
+  },
+  {
+    "title": "Titanic",
+    "genre": "Drama, Romance, Luar Negeri",
+    "duration": 194,
+    "rating": "PG-13",
+    "releaseDate": "2026-04-07",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/wO44qBPBG4c",
+    "synopsis": "Kisah cinta tragis berlatar belakang pelayaran perdana kapal RMS Titanic antara Rose, seorang gadis bangsawan yang terkekang, dan Jack, seorang seniman miskin berjiwa bebas."
+  },
+  {
+    "title": "Oppenheimer",
+    "genre": "Drama, Biography, History, Luar Negeri",
+    "duration": 180,
+    "rating": "R",
+    "releaseDate": "2026-04-04",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/qiuSBWVdgLI",
+    "synopsis": "Kisah hidup fisikawan teoretis J. Robert Oppenheimer yang memimpin Proyek Manhattan untuk menciptakan bom atom pertama di dunia selama Perang Dunia II."
+  },
+  {
+    "title": "Inside Out 2",
+    "genre": "Animation, Family, Comedy, Luar Negeri",
+    "duration": 96,
+    "rating": "SU",
+    "releaseDate": "2026-04-01",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/u69y5Ie519M",
+    "synopsis": "Kembali ke pikiran Riley yang kini telah menjadi remaja, Joy dan emosi lainnya harus menghadapi emosi baru seperti Anxiety (Kecemasan) yang mengambil alih kontrol pikiran Riley."
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 148,
+    "rating": "PG-13",
+    "releaseDate": "2026-06-09",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/1mTjfMFyPi8",
+    "synopsis": "Identitas Spider-Man terungkap, membuat Peter Parker meminta bantuan Doctor Strange. Namun, mantra ajaib yang salah membuka portal multiverse."
+  },
+  {
+    "title": "Iron Man",
+    "genre": "Action, Sci-Fi, Adventure, Luar Negeri",
+    "duration": 126,
+    "rating": "PG-13",
+    "releaseDate": "2026-06-13",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/8ugaeA-nMTc",
+    "synopsis": "Setelah ditawan di gua Timur Tengah, miliarder industri Tony Stark menciptakan baju zirah canggih untuk melarikan diri dan menggunakannya untuk memerangi kejahatan global."
+  },
+  {
+    "title": "Gladiator",
+    "genre": "Action, Drama, Adventure, Luar Negeri",
+    "duration": 155,
+    "rating": "R",
+    "releaseDate": "2026-06-17",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/P5ieIbInFpg",
+    "synopsis": "Seorang jenderal Romawi yang dikhianati oleh putra kaisar yang korup dipaksa menjadi budak gladiator. Ia bertarung di Colosseum demi membalas dendam atas pembunuhan keluarganya."
+  },
+  {
+    "title": "Your Name.",
+    "genre": "Animation, Fantasy, Drama, Romance, Anime",
+    "duration": 106,
+    "rating": "SU",
+    "releaseDate": "2026-06-21",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/o4-URMnBOPU",
+    "synopsis": "Dua remaja, Mitsuha di desa terpencil dan Taki di Tokyo, secara misterius bertukar tubuh secara acak, memicu pencarian emosional yang melampaui ruang dan waktu."
+  },
+  {
+    "title": "A Silent Voice",
+    "genre": "Animation, Drama, Romance, Anime",
+    "duration": 130,
+    "rating": "PG-13",
+    "releaseDate": "2026-06-25",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/TQK9By9qQiw",
+    "synopsis": "Seorang mantan perundung sekolah dasar berusaha menebus kesalahannya di masa lalu kepada seorang gadis tunarungu yang pernah ia rundung secara kejam."
+  },
+  {
+    "title": "One Piece Film: Red",
+    "genre": "Animation, Action, Adventure, Anime",
+    "duration": 115,
+    "rating": "PG-13",
+    "releaseDate": "2026-06-29",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/ZrhZvqgtdYY",
+    "synopsis": "Luffy dan kru Topi Jerami menghadiri konser musik Uta, penyanyi paling terkenal di dunia yang ternyata adalah putri dari kapten bajak laut legendaris Shanks."
+  },
+  {
+    "title": "Howl's Moving Castle",
+    "genre": "Animation, Fantasy, Romance, Anime",
+    "duration": 119,
+    "rating": "SU",
+    "releaseDate": "2026-07-03",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/13kOl2v0nD2OLbVSHnHk8GUFEhO.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/ARCQf2CEr8k",
+    "synopsis": "Sophie, seorang pengrajin topi muda, dikutuk menjadi wanita tua oleh penyihir jahat, membawanya mencari kastil berjalan milik penyihir tampan bernama Howl."
+  },
+  {
+    "title": "Spirited Away",
+    "genre": "Animation, Fantasy, Anime",
+    "duration": 125,
+    "rating": "SU",
+    "releaseDate": "2026-07-07",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/GAp2_0JJskk",
+    "synopsis": "Chihiro, seorang gadis berusia 10 tahun, tersesat di dunia roh magis yang diperintah oleh penyihir kejam Yubaba setelah orang tuanya diubah menjadi babi."
+  },
+  {
+    "title": "Weathering with You",
+    "genre": "Animation, Fantasy, Drama, Romance, Anime",
+    "duration": 112,
+    "rating": "SU",
+    "releaseDate": "2026-07-11",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qgrk7r1fV4IjuoeiGS5HOhXNdLJ.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/gVFDCLSSQVM",
+    "synopsis": "Seorang anak laki-laki yang melarikan diri to Tokyo berteman dengan seorang gadis yatim piatu yang tampaknya memiliki kemampuan magis memanggil sinar matahari."
+  },
+  {
+    "title": "Demon Slayer: Mugen Train",
+    "genre": "Animation, Action, Fantasy, Anime",
+    "duration": 117,
+    "rating": "R",
+    "releaseDate": "2026-07-15",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/v30H0qj_b9E",
+    "synopsis": "Tanjiro dan kawan-kawan bergabung dengan Flame Hashira, Kyojuro Rengoku, di dalam kereta Mugen untuk menyelidiki hilangnya lebih dari 40 penumpang oleh iblis jahat."
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "genre": "Animation, Family, Fantasy, Anime",
+    "duration": 86,
+    "rating": "SU",
+    "releaseDate": "2026-07-19",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/HaLISMAGdOE",
+    "synopsis": "Dua gadis kecil pindah ke pedesaan untuk berada di dekat ibu mereka yang sakit, dan menemukan hutan di sekitarnya dihuni oleh roh-roh ramah, termasuk Totoro raksasa."
+  },
+  {
+    "title": "Princess Mononoke",
+    "genre": "Animation, Adventure, Fantasy, Anime",
+    "duration": 134,
+    "rating": "PG-13",
+    "releaseDate": "2026-07-23",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/I1dHzoRl0sQ",
+    "synopsis": "Pangeran Ashitaka yang dikutuk terlibat dalam pertempuran sengit antara dewa hutan eksotis dan manusia industri yang merusak alam demi kemajuan teknologi."
+  },
+  {
+    "title": "Kiki's Delivery Service",
+    "genre": "Animation, Fantasy, Anime",
+    "duration": 103,
+    "rating": "SU",
+    "releaseDate": "2026-07-27",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/nu4OX6RKeLY",
+    "synopsis": "Kiki, seorang penyihir muda berusia 13 tahun, pindah to kota baru bersama kucing hitamnya, Jiji, untuk memulai layanan pengiriman barang terbang miliknya sendiri."
+  },
+  {
+    "title": "Ponyo",
+    "genre": "Animation, Family, Fantasy, Anime",
+    "duration": 101,
+    "rating": "SU",
+    "releaseDate": "2026-07-31",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yp8vEZflGynlEylxEesbYasc06i.jpg",
+    "trailerUrl": "https://www.youtube.com/embed/h6XP82TyFWw",
+    "synopsis": "Seorang bocah lelaki berumur lima tahun bernama Sosuke bersahabat dengan Ponyo, seekor ikan mas putri duyung magis yang sangat ingin menjadi manusia."
+  }
+]

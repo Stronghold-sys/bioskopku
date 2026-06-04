@@ -1,0 +1,1162 @@
+[
+  {
+    "_id": "3f91ff27cb1d1c107f2bf579",
+    "createdAt": "2026-06-04T11:24:04.321Z",
+    "updatedAt": "2026-06-04T11:24:04.321Z",
+    "movieId": "9b70130514926e1a0b0b9996",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "9ea7125400ba28adbadcdbf3",
+    "createdAt": "2026-06-04T11:24:04.322Z",
+    "updatedAt": "2026-06-04T11:24:04.322Z",
+    "movieId": "9b70130514926e1a0b0b9996",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "b6aad712b3feff622fabf987",
+    "createdAt": "2026-06-04T11:24:04.324Z",
+    "updatedAt": "2026-06-04T11:24:04.324Z",
+    "movieId": "30574d4f87315946995dce87",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "36cdab5394b3db295ffaa296",
+    "createdAt": "2026-06-04T11:24:04.325Z",
+    "updatedAt": "2026-06-04T11:24:04.325Z",
+    "movieId": "30574d4f87315946995dce87",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "9d463f6b2fcc6917d3f90291",
+    "createdAt": "2026-06-04T11:24:04.326Z",
+    "updatedAt": "2026-06-04T11:24:04.326Z",
+    "movieId": "3e522feebe9b1a713d23b969",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "6919c0b6381549a0a610349b",
+    "createdAt": "2026-06-04T11:24:04.327Z",
+    "updatedAt": "2026-06-04T11:24:04.327Z",
+    "movieId": "3e522feebe9b1a713d23b969",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "6b39fd45d8bb605cc1de7f7a",
+    "createdAt": "2026-06-04T11:24:04.328Z",
+    "updatedAt": "2026-06-04T11:24:04.328Z",
+    "movieId": "9bda588d6a7787d46347de16",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "c1c3b37fce05532f9f22464e",
+    "createdAt": "2026-06-04T11:24:04.329Z",
+    "updatedAt": "2026-06-04T11:24:04.329Z",
+    "movieId": "9bda588d6a7787d46347de16",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "087b108d76d68806cd82d668",
+    "createdAt": "2026-06-04T11:24:04.331Z",
+    "updatedAt": "2026-06-04T11:24:04.331Z",
+    "movieId": "8235e3eafb2eaa310d74d21e",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "4fa4764b36d0f9e7a79772d9",
+    "createdAt": "2026-06-04T11:24:04.331Z",
+    "updatedAt": "2026-06-04T11:24:04.331Z",
+    "movieId": "8235e3eafb2eaa310d74d21e",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "e4b55c06ddca14041083a4e1",
+    "createdAt": "2026-06-04T11:24:04.333Z",
+    "updatedAt": "2026-06-04T11:24:04.333Z",
+    "movieId": "563db1ec44481c8c4f534ce4",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "905209c8b4d0d4bffc1fbbc9",
+    "createdAt": "2026-06-04T11:24:04.333Z",
+    "updatedAt": "2026-06-04T11:24:04.333Z",
+    "movieId": "563db1ec44481c8c4f534ce4",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "a825ebfd529a3858dc9c1863",
+    "createdAt": "2026-06-04T11:24:04.335Z",
+    "updatedAt": "2026-06-04T11:24:04.335Z",
+    "movieId": "b70880eb4456ef0ed5299595",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "e7ea106680a3571e5148276f",
+    "createdAt": "2026-06-04T11:24:04.335Z",
+    "updatedAt": "2026-06-04T11:24:04.335Z",
+    "movieId": "b70880eb4456ef0ed5299595",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "7f461f0c7522c965b032fb74",
+    "createdAt": "2026-06-04T11:24:04.336Z",
+    "updatedAt": "2026-06-04T11:24:04.336Z",
+    "movieId": "1aaf329365c9581c874b91ed",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "0fc5a6afd62ed5414149d319",
+    "createdAt": "2026-06-04T11:24:04.337Z",
+    "updatedAt": "2026-06-04T11:24:04.337Z",
+    "movieId": "1aaf329365c9581c874b91ed",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "a1b099097d2af9996ffdcc63",
+    "createdAt": "2026-06-04T11:24:04.339Z",
+    "updatedAt": "2026-06-04T11:24:04.339Z",
+    "movieId": "33eacd43168b4be00879fbde",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "1ead9e81b435e8945984fa03",
+    "createdAt": "2026-06-04T11:24:04.340Z",
+    "updatedAt": "2026-06-04T11:24:04.340Z",
+    "movieId": "33eacd43168b4be00879fbde",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "5f5e9268644d728a4182f205",
+    "createdAt": "2026-06-04T11:24:04.341Z",
+    "updatedAt": "2026-06-04T11:24:04.341Z",
+    "movieId": "dcf56c1dd25fecd6e074ebd5",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "e5bc2a9ab72117c99c9eeb3b",
+    "createdAt": "2026-06-04T11:24:04.342Z",
+    "updatedAt": "2026-06-04T11:24:04.342Z",
+    "movieId": "dcf56c1dd25fecd6e074ebd5",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "38c2572f444daeaf25e19922",
+    "createdAt": "2026-06-04T11:24:04.344Z",
+    "updatedAt": "2026-06-04T11:24:04.344Z",
+    "movieId": "a26a52ef3152a85fcb017805",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "35b0f4137830c20e305e2a05",
+    "createdAt": "2026-06-04T11:24:04.344Z",
+    "updatedAt": "2026-06-04T11:24:04.344Z",
+    "movieId": "a26a52ef3152a85fcb017805",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "873c1a8701c39248b9901d41",
+    "createdAt": "2026-06-04T11:24:04.346Z",
+    "updatedAt": "2026-06-04T11:24:04.346Z",
+    "movieId": "0ee5e2f99fded88e4f80ddce",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "447bbe72168128dc144f4ec4",
+    "createdAt": "2026-06-04T11:24:04.346Z",
+    "updatedAt": "2026-06-04T11:24:04.346Z",
+    "movieId": "0ee5e2f99fded88e4f80ddce",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "53b7bdd9da6ef0e52bd27b8c",
+    "createdAt": "2026-06-04T11:24:04.348Z",
+    "updatedAt": "2026-06-04T11:24:04.348Z",
+    "movieId": "eeee4e9dd78f2fc1313f236d",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "f1f71d59213351b9dcd94c6e",
+    "createdAt": "2026-06-04T11:24:04.349Z",
+    "updatedAt": "2026-06-04T11:24:04.349Z",
+    "movieId": "eeee4e9dd78f2fc1313f236d",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "cf2ff379f957acc69d66a542",
+    "createdAt": "2026-06-04T11:24:04.351Z",
+    "updatedAt": "2026-06-04T11:24:04.351Z",
+    "movieId": "6d03b96c735684c9bfc1c751",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "75112e4de5f77d740732960e",
+    "createdAt": "2026-06-04T11:24:04.351Z",
+    "updatedAt": "2026-06-04T11:24:04.351Z",
+    "movieId": "6d03b96c735684c9bfc1c751",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "39f66e1a083f76dd72240a60",
+    "createdAt": "2026-06-04T11:24:04.353Z",
+    "updatedAt": "2026-06-04T11:24:04.353Z",
+    "movieId": "6e079a675e5f4b7f5087767c",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "5c4e39d280ade8214a26c6f9",
+    "createdAt": "2026-06-04T11:24:04.354Z",
+    "updatedAt": "2026-06-04T11:24:04.354Z",
+    "movieId": "6e079a675e5f4b7f5087767c",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "6124c7726add5d08bc61b351",
+    "createdAt": "2026-06-04T11:24:04.356Z",
+    "updatedAt": "2026-06-04T11:24:04.356Z",
+    "movieId": "5c150ccaf299f582c19f0cc2",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "5626436d5629dce1a5bf4711",
+    "createdAt": "2026-06-04T11:24:04.357Z",
+    "updatedAt": "2026-06-04T11:24:04.357Z",
+    "movieId": "5c150ccaf299f582c19f0cc2",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "553350f078c9111ce0a22d0f",
+    "createdAt": "2026-06-04T11:24:04.359Z",
+    "updatedAt": "2026-06-04T11:24:04.359Z",
+    "movieId": "872504e8f5dd2d4affe20f33",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "172fe33e2742b70147643c60",
+    "createdAt": "2026-06-04T11:24:04.360Z",
+    "updatedAt": "2026-06-04T11:24:04.360Z",
+    "movieId": "872504e8f5dd2d4affe20f33",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "3421f50c05ed7d8b6ea88161",
+    "createdAt": "2026-06-04T11:24:04.362Z",
+    "updatedAt": "2026-06-04T11:24:04.362Z",
+    "movieId": "c749bf4381ffabb782e9ff29",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "7b4e6244e4fe943b0e0b96d5",
+    "createdAt": "2026-06-04T11:24:04.363Z",
+    "updatedAt": "2026-06-04T11:24:04.363Z",
+    "movieId": "c749bf4381ffabb782e9ff29",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "b0d552b4cdfd6485378c6d82",
+    "createdAt": "2026-06-04T11:24:04.365Z",
+    "updatedAt": "2026-06-04T11:24:04.365Z",
+    "movieId": "184f5090a90df3051907d8b8",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "9d035dccddcc61e9555a06fa",
+    "createdAt": "2026-06-04T11:24:04.366Z",
+    "updatedAt": "2026-06-04T11:24:04.366Z",
+    "movieId": "184f5090a90df3051907d8b8",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "385bbb17527810d50057d0f2",
+    "createdAt": "2026-06-04T11:24:04.367Z",
+    "updatedAt": "2026-06-04T11:24:04.367Z",
+    "movieId": "217ccffc618e1f27f744d705",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "d1c1eacdd132fa14aa794a67",
+    "createdAt": "2026-06-04T11:24:04.369Z",
+    "updatedAt": "2026-06-04T11:24:04.369Z",
+    "movieId": "217ccffc618e1f27f744d705",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "ae72d899a19b2971c1d2031f",
+    "createdAt": "2026-06-04T11:24:04.371Z",
+    "updatedAt": "2026-06-04T11:24:04.371Z",
+    "movieId": "986865c30c7a7f8df8b2107b",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "3c5c6a2b3dca365bb310da53",
+    "createdAt": "2026-06-04T11:24:04.372Z",
+    "updatedAt": "2026-06-04T11:24:04.372Z",
+    "movieId": "986865c30c7a7f8df8b2107b",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "0b378707424b28f448e08b7c",
+    "createdAt": "2026-06-04T11:24:04.374Z",
+    "updatedAt": "2026-06-04T11:24:04.374Z",
+    "movieId": "3a9015c375e8ffb9961bda58",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "be3ece00b828c9193453d379",
+    "createdAt": "2026-06-04T11:24:04.374Z",
+    "updatedAt": "2026-06-04T11:24:04.374Z",
+    "movieId": "3a9015c375e8ffb9961bda58",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "56dd997ecf358730f26f4bb0",
+    "createdAt": "2026-06-04T11:24:04.376Z",
+    "updatedAt": "2026-06-04T11:24:04.376Z",
+    "movieId": "e23cb9c422b2d78dc523a086",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "d82292a6fa869e454ee9b729",
+    "createdAt": "2026-06-04T11:24:04.377Z",
+    "updatedAt": "2026-06-04T11:24:04.377Z",
+    "movieId": "e23cb9c422b2d78dc523a086",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "7722af634c2b26dd3468693c",
+    "createdAt": "2026-06-04T11:24:04.379Z",
+    "updatedAt": "2026-06-04T11:24:04.379Z",
+    "movieId": "df8517085223fd446d74ab2e",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "9739680ab5ccec02f8272306",
+    "createdAt": "2026-06-04T11:24:04.379Z",
+    "updatedAt": "2026-06-04T11:24:04.379Z",
+    "movieId": "df8517085223fd446d74ab2e",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "a082d620e75223d4dbc6bb26",
+    "createdAt": "2026-06-04T11:24:04.381Z",
+    "updatedAt": "2026-06-04T11:24:04.381Z",
+    "movieId": "ba1caf5f04a7764078ef0f57",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "df84f4264717dbb166e55bb5",
+    "createdAt": "2026-06-04T11:24:04.382Z",
+    "updatedAt": "2026-06-04T11:24:04.382Z",
+    "movieId": "ba1caf5f04a7764078ef0f57",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "8153da21e2dc90ba4afd57cc",
+    "createdAt": "2026-06-04T11:24:04.383Z",
+    "updatedAt": "2026-06-04T11:24:04.383Z",
+    "movieId": "46af7e275c93a03d6da42678",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "86cf5877196dc7c00b6b7b82",
+    "createdAt": "2026-06-04T11:24:04.384Z",
+    "updatedAt": "2026-06-04T11:24:04.384Z",
+    "movieId": "46af7e275c93a03d6da42678",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "52e03ecb0e5d21452b3f7877",
+    "createdAt": "2026-06-04T11:24:04.386Z",
+    "updatedAt": "2026-06-04T11:24:04.386Z",
+    "movieId": "1e727049640f78370030e30f",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "292530337d45188e517fc004",
+    "createdAt": "2026-06-04T11:24:04.388Z",
+    "updatedAt": "2026-06-04T11:24:04.388Z",
+    "movieId": "1e727049640f78370030e30f",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "0371848a6986cd14bd044ae9",
+    "createdAt": "2026-06-04T11:24:04.390Z",
+    "updatedAt": "2026-06-04T11:24:04.390Z",
+    "movieId": "a90a519e6e86279fc07ed06c",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "11410dcc501a61e8b4759d29",
+    "createdAt": "2026-06-04T11:24:04.391Z",
+    "updatedAt": "2026-06-04T11:24:04.391Z",
+    "movieId": "a90a519e6e86279fc07ed06c",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "40ed6c2c4ef7f68418bfecd7",
+    "createdAt": "2026-06-04T11:24:04.392Z",
+    "updatedAt": "2026-06-04T11:24:04.392Z",
+    "movieId": "b643d852c700da855dc58ee9",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "3db7b6603e4fa4295994ea97",
+    "createdAt": "2026-06-04T11:24:04.393Z",
+    "updatedAt": "2026-06-04T11:24:04.393Z",
+    "movieId": "b643d852c700da855dc58ee9",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "7cd81159b487051723fe38d5",
+    "createdAt": "2026-06-04T11:24:04.395Z",
+    "updatedAt": "2026-06-04T11:24:04.395Z",
+    "movieId": "4f9b22d07a800e5a59af854d",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "e5b1e12e7b2eadbde46560fe",
+    "createdAt": "2026-06-04T11:24:04.396Z",
+    "updatedAt": "2026-06-04T11:24:04.396Z",
+    "movieId": "4f9b22d07a800e5a59af854d",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "a2b73f58d6e824ce4037dc67",
+    "createdAt": "2026-06-04T11:24:04.398Z",
+    "updatedAt": "2026-06-04T11:24:04.398Z",
+    "movieId": "77eff5c81a6467c04edab24e",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "c1a34ad0fa0e7fe5ba83aebb",
+    "createdAt": "2026-06-04T11:24:04.399Z",
+    "updatedAt": "2026-06-04T11:24:04.399Z",
+    "movieId": "77eff5c81a6467c04edab24e",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "8771e3d85914e29ac1e643d7",
+    "createdAt": "2026-06-04T11:24:04.400Z",
+    "updatedAt": "2026-06-04T11:24:04.400Z",
+    "movieId": "124c1cdff41429fbffa818ea",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "0b0fea3910a37cc11f21e028",
+    "createdAt": "2026-06-04T11:24:04.401Z",
+    "updatedAt": "2026-06-04T11:24:04.401Z",
+    "movieId": "124c1cdff41429fbffa818ea",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "37cebb8e46baa058fa152d10",
+    "createdAt": "2026-06-04T11:24:04.403Z",
+    "updatedAt": "2026-06-04T11:24:04.403Z",
+    "movieId": "e8ebff45f159762cee0d1e95",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "de8e0c00a39b8da3a6c89ac8",
+    "createdAt": "2026-06-04T11:24:04.404Z",
+    "updatedAt": "2026-06-04T11:24:04.404Z",
+    "movieId": "e8ebff45f159762cee0d1e95",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "56e5702c125ce8cab0771503",
+    "createdAt": "2026-06-04T11:24:04.405Z",
+    "updatedAt": "2026-06-04T11:24:04.405Z",
+    "movieId": "b5da031f5d212acfabd0950c",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "9d6ab50a905be16e6a83b463",
+    "createdAt": "2026-06-04T11:24:04.406Z",
+    "updatedAt": "2026-06-04T11:24:04.406Z",
+    "movieId": "b5da031f5d212acfabd0950c",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "e3d7d5d9ebcb7c562ad4dfed",
+    "createdAt": "2026-06-04T11:24:04.408Z",
+    "updatedAt": "2026-06-04T11:24:04.408Z",
+    "movieId": "a48bb30196c15d17290a1e88",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "9ad04009b6577951e3a351f2",
+    "createdAt": "2026-06-04T11:24:04.409Z",
+    "updatedAt": "2026-06-04T11:24:04.409Z",
+    "movieId": "a48bb30196c15d17290a1e88",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "8bb977cb3590833201e3af92",
+    "createdAt": "2026-06-04T11:24:04.411Z",
+    "updatedAt": "2026-06-04T11:24:04.411Z",
+    "movieId": "8c4eec9a1ff0ffaa24746e73",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "52281f44e08c0e1d37516a11",
+    "createdAt": "2026-06-04T11:24:04.411Z",
+    "updatedAt": "2026-06-04T11:24:04.411Z",
+    "movieId": "8c4eec9a1ff0ffaa24746e73",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "90295656bba290d6d8373cd6",
+    "createdAt": "2026-06-04T11:24:04.413Z",
+    "updatedAt": "2026-06-04T11:24:04.413Z",
+    "movieId": "f7b8336fe9ab74f960b8d77d",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "d70dd64d5beb78f1b6ef9f6b",
+    "createdAt": "2026-06-04T11:24:04.414Z",
+    "updatedAt": "2026-06-04T11:24:04.414Z",
+    "movieId": "f7b8336fe9ab74f960b8d77d",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "b296a5ec10e0b081e8048f4f",
+    "createdAt": "2026-06-04T11:24:04.416Z",
+    "updatedAt": "2026-06-04T11:24:04.416Z",
+    "movieId": "1641e6d2a10bb31b04e652a0",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "d348eb515418e12f5fd2dca0",
+    "createdAt": "2026-06-04T11:24:04.417Z",
+    "updatedAt": "2026-06-04T11:24:04.417Z",
+    "movieId": "1641e6d2a10bb31b04e652a0",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "f7f3d3816ea33510cb46ad7f",
+    "createdAt": "2026-06-04T11:24:04.418Z",
+    "updatedAt": "2026-06-04T11:24:04.418Z",
+    "movieId": "bfd2a330263cc1686d6a7be2",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "69c28cc9f0d2f583c21e369b",
+    "createdAt": "2026-06-04T11:24:04.419Z",
+    "updatedAt": "2026-06-04T11:24:04.419Z",
+    "movieId": "bfd2a330263cc1686d6a7be2",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "7d1427b169c29da08ab49aed",
+    "createdAt": "2026-06-04T11:24:04.422Z",
+    "updatedAt": "2026-06-04T11:24:04.422Z",
+    "movieId": "8298d0af47d758d9e4f2fb50",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "50f1eb3e839f12214b5407c5",
+    "createdAt": "2026-06-04T11:24:04.423Z",
+    "updatedAt": "2026-06-04T11:24:04.423Z",
+    "movieId": "8298d0af47d758d9e4f2fb50",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "ce2ca65b7093de7b030b19ad",
+    "createdAt": "2026-06-04T11:24:04.424Z",
+    "updatedAt": "2026-06-04T11:24:04.424Z",
+    "movieId": "eae8aaff91fba923a5be3f71",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "950985a48c9d8d95670d6696",
+    "createdAt": "2026-06-04T11:24:04.425Z",
+    "updatedAt": "2026-06-04T11:24:04.425Z",
+    "movieId": "eae8aaff91fba923a5be3f71",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "cc5c9d4eec95411cf8bf2913",
+    "createdAt": "2026-06-04T11:24:04.427Z",
+    "updatedAt": "2026-06-04T11:24:04.427Z",
+    "movieId": "af1eef01c948576df73ab520",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "a79221cdda03c6e8640f66d1",
+    "createdAt": "2026-06-04T11:24:04.429Z",
+    "updatedAt": "2026-06-04T11:24:04.429Z",
+    "movieId": "af1eef01c948576df73ab520",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "877f5bd0628aeb3d562b039d",
+    "createdAt": "2026-06-04T11:24:04.431Z",
+    "updatedAt": "2026-06-04T11:24:04.431Z",
+    "movieId": "6cf7880ef47a876c3ccb5f1a",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "444a013225ffc2ca98bbfd70",
+    "createdAt": "2026-06-04T11:24:04.432Z",
+    "updatedAt": "2026-06-04T11:24:04.432Z",
+    "movieId": "6cf7880ef47a876c3ccb5f1a",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "1cf149a38914d2796f296adc",
+    "createdAt": "2026-06-04T11:24:04.434Z",
+    "updatedAt": "2026-06-04T11:24:04.434Z",
+    "movieId": "0cad394c9b5646efa5bf6983",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "da83868ed5791f87d77e060e",
+    "createdAt": "2026-06-04T11:24:04.435Z",
+    "updatedAt": "2026-06-04T11:24:04.435Z",
+    "movieId": "0cad394c9b5646efa5bf6983",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "1e9c95156a7f9baa3dd7d2a6",
+    "createdAt": "2026-06-04T11:24:04.437Z",
+    "updatedAt": "2026-06-04T11:24:04.437Z",
+    "movieId": "3a01b5fd853bbf6e528d3cd8",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "0225041821e54b865dd04a75",
+    "createdAt": "2026-06-04T11:24:04.438Z",
+    "updatedAt": "2026-06-04T11:24:04.438Z",
+    "movieId": "3a01b5fd853bbf6e528d3cd8",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "6c961d634cff6a6fccfce35e",
+    "createdAt": "2026-06-04T11:24:04.441Z",
+    "updatedAt": "2026-06-04T11:24:04.441Z",
+    "movieId": "126801bed40b057a0d563f65",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "514b315be3ba328c7221cec2",
+    "createdAt": "2026-06-04T11:24:04.442Z",
+    "updatedAt": "2026-06-04T11:24:04.442Z",
+    "movieId": "126801bed40b057a0d563f65",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "30e46643a116ee9b2832951a",
+    "createdAt": "2026-06-04T11:24:04.444Z",
+    "updatedAt": "2026-06-04T11:24:04.444Z",
+    "movieId": "a9c62c0d0a8b86fd98e31398",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "880de3d9a58be6f4c039024e",
+    "createdAt": "2026-06-04T11:24:04.444Z",
+    "updatedAt": "2026-06-04T11:24:04.444Z",
+    "movieId": "a9c62c0d0a8b86fd98e31398",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "6cec0a5f5024e96855cf6b22",
+    "createdAt": "2026-06-04T11:24:04.447Z",
+    "updatedAt": "2026-06-04T11:24:04.447Z",
+    "movieId": "39c2fb0152c84e47384dc081",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "cfd7db827b8de88755d30e08",
+    "createdAt": "2026-06-04T11:24:04.448Z",
+    "updatedAt": "2026-06-04T11:24:04.448Z",
+    "movieId": "39c2fb0152c84e47384dc081",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "f40a310c5da2ad9391cce5a3",
+    "createdAt": "2026-06-04T11:24:04.450Z",
+    "updatedAt": "2026-06-04T11:24:04.450Z",
+    "movieId": "6a1dc70d4bf70e6ebaaa3dd3",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "9e5e83fa178f13de4243b58a",
+    "createdAt": "2026-06-04T11:24:04.451Z",
+    "updatedAt": "2026-06-04T11:24:04.451Z",
+    "movieId": "6a1dc70d4bf70e6ebaaa3dd3",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "4611dce9cf4f6a69ae70ef3d",
+    "createdAt": "2026-06-04T11:24:04.453Z",
+    "updatedAt": "2026-06-04T11:24:04.453Z",
+    "movieId": "7286fe63bb137ddc5a7aa425",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "1d02eb198c83ace3aec52263",
+    "createdAt": "2026-06-04T11:24:04.455Z",
+    "updatedAt": "2026-06-04T11:24:04.455Z",
+    "movieId": "7286fe63bb137ddc5a7aa425",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "072053474e665d64bd6a4d9b",
+    "createdAt": "2026-06-04T11:24:04.463Z",
+    "updatedAt": "2026-06-04T11:24:04.463Z",
+    "movieId": "e3514082234d76463f483ec8",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "59d8674425f21324c00480e8",
+    "createdAt": "2026-06-04T11:24:04.464Z",
+    "updatedAt": "2026-06-04T11:24:04.464Z",
+    "movieId": "e3514082234d76463f483ec8",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "53f375083499eeede8e2750d",
+    "createdAt": "2026-06-04T11:24:04.466Z",
+    "updatedAt": "2026-06-04T11:24:04.466Z",
+    "movieId": "3512e80d93788a585f281240",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 75000
+  },
+  {
+    "_id": "c1ab9fe7870379b44d6d1a1b",
+    "createdAt": "2026-06-04T11:24:04.467Z",
+    "updatedAt": "2026-06-04T11:24:04.467Z",
+    "movieId": "3512e80d93788a585f281240",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "cc4fd30919b0f00da01f1fbe",
+    "createdAt": "2026-06-04T11:24:04.469Z",
+    "updatedAt": "2026-06-04T11:24:04.469Z",
+    "movieId": "fab8b357c2daf64a186dcdf0",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 40000
+  },
+  {
+    "_id": "d5921e14f0667ae134dce66c",
+    "createdAt": "2026-06-04T11:24:04.471Z",
+    "updatedAt": "2026-06-04T11:24:04.471Z",
+    "movieId": "fab8b357c2daf64a186dcdf0",
+    "studioId": "2dbe5967691203fc037e47bb",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 40000
+  },
+  {
+    "_id": "6161349a5fbe3406edffe366",
+    "createdAt": "2026-06-04T11:24:04.473Z",
+    "updatedAt": "2026-06-04T11:24:04.473Z",
+    "movieId": "d646336409b06490dbd568f4",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 100000
+  },
+  {
+    "_id": "546b114895d1f2d905c04032",
+    "createdAt": "2026-06-04T11:24:04.474Z",
+    "updatedAt": "2026-06-04T11:24:04.474Z",
+    "movieId": "d646336409b06490dbd568f4",
+    "studioId": "cc230c30d1fe197a20bd0cf8",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 100000
+  },
+  {
+    "_id": "7747c8b6de39a1c19c3d7eec",
+    "createdAt": "2026-06-04T11:24:04.495Z",
+    "updatedAt": "2026-06-04T11:24:04.495Z",
+    "movieId": "b30d9437d5c1eed3aa2a03f1",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-04",
+    "startTime": "17:00",
+    "price": 75000
+  },
+  {
+    "_id": "c6d10efae6a83346e45cd100",
+    "createdAt": "2026-06-04T11:24:04.496Z",
+    "updatedAt": "2026-06-04T11:24:04.496Z",
+    "movieId": "b30d9437d5c1eed3aa2a03f1",
+    "studioId": "d29391c5e106d53bb414a8b2",
+    "date": "2026-06-05",
+    "startTime": "11:00",
+    "price": 75000
+  },
+  {
+    "_id": "def034b0f3fbf278700096f0",
+    "createdAt": "2026-06-04T11:24:04.499Z",
+    "updatedAt": "2026-06-04T11:24:04.499Z",
+    "movieId": "926168f938779c3661605ff2",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-04",
+    "startTime": "20:00",
+    "price": 40000
+  },
+  {
+    "_id": "afc1d9c007499667de8f2a72",
+    "createdAt": "2026-06-04T11:24:04.500Z",
+    "updatedAt": "2026-06-04T11:24:04.500Z",
+    "movieId": "926168f938779c3661605ff2",
+    "studioId": "333087d0f90fab0b981f11f8",
+    "date": "2026-06-05",
+    "startTime": "14:00",
+    "price": 40000
+  },
+  {
+    "_id": "5311a0b3d6a2a4d75f8603bd",
+    "createdAt": "2026-06-04T11:24:04.502Z",
+    "updatedAt": "2026-06-04T11:24:04.502Z",
+    "movieId": "74a01fb4e2385a4ba45c3413",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-04",
+    "startTime": "11:00",
+    "price": 100000
+  },
+  {
+    "_id": "dde4175cd2dcca234b71c017",
+    "createdAt": "2026-06-04T11:24:04.503Z",
+    "updatedAt": "2026-06-04T11:24:04.503Z",
+    "movieId": "74a01fb4e2385a4ba45c3413",
+    "studioId": "4cdb96f8660a0e3f12169162",
+    "date": "2026-06-05",
+    "startTime": "17:00",
+    "price": 100000
+  },
+  {
+    "_id": "53eb6aec540ae5fac03452e1",
+    "createdAt": "2026-06-04T11:24:04.506Z",
+    "updatedAt": "2026-06-04T11:24:04.506Z",
+    "movieId": "de61f154642686408997cae0",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-04",
+    "startTime": "14:00",
+    "price": 75000
+  },
+  {
+    "_id": "ef99ed3a0305381f94db1c23",
+    "createdAt": "2026-06-04T11:24:04.507Z",
+    "updatedAt": "2026-06-04T11:24:04.507Z",
+    "movieId": "de61f154642686408997cae0",
+    "studioId": "877cc6fa934f790a812a478f",
+    "date": "2026-06-05",
+    "startTime": "20:00",
+    "price": 75000
+  }
+]

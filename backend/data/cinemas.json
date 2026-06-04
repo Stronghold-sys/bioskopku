@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "6ae98553ce8276477680dc2f",
+    "createdAt": "2026-06-04T11:24:04.144Z",
+    "updatedAt": "2026-06-04T11:24:04.144Z",
+    "name": "BioskopKu Grand Cinema",
+    "location": "Grand Indonesia, Jakarta",
+    "description": "Experience luxury movie watching in the heart of the capital."
+  },
+  {
+    "_id": "35946cdfabecbca9c17149b8",
+    "createdAt": "2026-06-04T11:24:04.207Z",
+    "updatedAt": "2026-06-04T11:24:04.207Z",
+    "name": "BioskopKu Plaza Mall",
+    "location": "Paskal Hyper Square, Bandung",
+    "description": "State of the art audiovisual technology for all movie enthusiasts."
+  }
+]

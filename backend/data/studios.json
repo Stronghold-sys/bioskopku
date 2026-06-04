@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "d29391c5e106d53bb414a8b2",
+    "createdAt": "2026-06-04T11:24:04.144Z",
+    "updatedAt": "2026-06-04T11:24:04.144Z",
+    "name": "Studio 1 (IMAX)",
+    "classType": "IMAX",
+    "basePrice": 75000,
+    "cinemaId": "6ae98553ce8276477680dc2f"
+  },
+  {
+    "_id": "333087d0f90fab0b981f11f8",
+    "createdAt": "2026-06-04T11:24:04.163Z",
+    "updatedAt": "2026-06-04T11:24:04.163Z",
+    "name": "Studio 2 (Regular)",
+    "classType": "Regular",
+    "basePrice": 40000,
+    "cinemaId": "6ae98553ce8276477680dc2f"
+  },
+  {
+    "_id": "4cdb96f8660a0e3f12169162",
+    "createdAt": "2026-06-04T11:24:04.185Z",
+    "updatedAt": "2026-06-04T11:24:04.185Z",
+    "name": "Studio 3 (Premiere)",
+    "classType": "Premiere",
+    "basePrice": 100000,
+    "cinemaId": "6ae98553ce8276477680dc2f"
+  },
+  {
+    "_id": "877cc6fa934f790a812a478f",
+    "createdAt": "2026-06-04T11:24:04.208Z",
+    "updatedAt": "2026-06-04T11:24:04.208Z",
+    "name": "Studio 1 (IMAX)",
+    "classType": "IMAX",
+    "basePrice": 75000,
+    "cinemaId": "35946cdfabecbca9c17149b8"
+  },
+  {
+    "_id": "2dbe5967691203fc037e47bb",
+    "createdAt": "2026-06-04T11:24:04.246Z",
+    "updatedAt": "2026-06-04T11:24:04.246Z",
+    "name": "Studio 2 (Regular)",
+    "classType": "Regular",
+    "basePrice": 40000,
+    "cinemaId": "35946cdfabecbca9c17149b8"
+  },
+  {
+    "_id": "cc230c30d1fe197a20bd0cf8",
+    "createdAt": "2026-06-04T11:24:04.291Z",
+    "updatedAt": "2026-06-04T11:24:04.291Z",
+    "name": "Studio 3 (Premiere)",
+    "classType": "Premiere",
+    "basePrice": 100000,
+    "cinemaId": "35946cdfabecbca9c17149b8"
+  }
+]
