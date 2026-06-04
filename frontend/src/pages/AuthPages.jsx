@@ -62,7 +62,7 @@ export const Login = ({ onLoginSuccess }) => {
           setModal({ isOpen: true, type: 'error', title: 'Login Gagal', message: data.message });
         }
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setModal({ isOpen: true, type: 'error', title: 'Kesalahan Sistem', message: 'Tidak dapat terhubung ke server.' });
     }
