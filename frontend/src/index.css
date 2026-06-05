@@ -697,10 +697,10 @@ body {
    ========================================== */
 
 :root {
-  --accent-purple: #7c4dff;
-  --accent-blue: #6366f1;
-  --accent-purple-glow: rgba(124, 77, 255, 0.15);
-  --accent-blue-glow: rgba(99, 102, 241, 0.15);
+  --accent-purple: var(--accent-gold);
+  --accent-blue: var(--accent-gold);
+  --accent-purple-glow: rgba(255, 170, 0, 0.15);
+  --accent-blue-glow: rgba(255, 170, 0, 0.15);
 }
 
 .main-footer {
@@ -731,7 +731,7 @@ body {
   left: 20%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(124, 77, 255, 0.05) 0%, rgba(124, 77, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(255, 170, 0, 0.04) 0%, rgba(255, 170, 0, 0) 70%);
   filter: blur(50px);
 }
 
@@ -741,7 +741,7 @@ body {
   right: 20%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, rgba(99, 102, 241, 0) 70%);
+  background: radial-gradient(circle, rgba(255, 170, 0, 0.04) 0%, rgba(255, 170, 0, 0) 70%);
   filter: blur(50px);
 }
 
@@ -771,14 +771,15 @@ body {
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.5px;
+  letter-spacing: 2px;
 }
 
 .footer-brand span {
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
+  color: var(--accent-gold);
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  font-weight: 800;
 }
 
 .footer-tagline {
@@ -1090,8 +1091,8 @@ body {
 }
 
 .copyright-text span {
-  color: var(--text-secondary);
-  font-weight: 500;
+  color: var(--accent-gold);
+  font-weight: 800;
 }
 
 .footer-bottom-right {

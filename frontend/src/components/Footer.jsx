@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Column 1: Brand & Newsletter */}
           <div className="footer-column brand-column">
             <h2 className="footer-brand">
-              Bioskop<span>Ku</span>
+              BIOSKOP<span>KU</span>
             </h2>
             <p className="footer-tagline">
               Platform pemesanan tiket bioskop digital modern, cepat, dan terpercaya. Temukan film favorit Anda dan pesan kursi terbaik dengan mudah.
@@ -178,7 +178,7 @@ const Footer = () => {
         <div className="footer-bottom-container">
           <div className="footer-bottom-left">
             <p className="copyright-text">
-              © 2026 <span>BioskopKu</span>. All rights reserved.
+              © 2026 BIOSKOP<span>KU</span>. All rights reserved.
             </p>
           </div>
           <div className="footer-bottom-right">
