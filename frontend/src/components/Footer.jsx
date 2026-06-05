@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Mail, Phone, Clock, Send, HelpCircle, Shield, Info, FileText, BookOpen, AlertCircle } from 'lucide-react';
+import { Mail, Phone, Clock, Send, HelpCircle, Info, BookOpen, AlertCircle } from 'lucide-react';
 
 const Footer = () => {
   const location = useLocation();

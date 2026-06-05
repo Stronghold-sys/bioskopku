@@ -22,7 +22,7 @@ const ScrollToTop = () => {
         document.documentElement.scrollLeft = 0;
         try {
           document.documentElement.scrollIntoView(true);
-        } catch (e) {
+        } catch {
           // ignore fallback
         }
       }
