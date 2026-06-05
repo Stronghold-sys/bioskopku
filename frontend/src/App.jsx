@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import { LayoutDashboard, Film, Calendar, Tag, FileText } from 'lucide-react';
+
 
 import { API_URL } from './config';
 
@@ -102,6 +104,7 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-primary)' }}>
         <Navbar user={user} onLogout={handleLogout} />
         
