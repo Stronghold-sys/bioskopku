@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Mail, Phone, Clock, Send, HelpCircle, Shield, Info, FileText, BookOpen, AlertCircle } from 'lucide-react';
 
 const Footer = () => {
+  const location = useLocation();
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [error, setError] = useState('');
+
+  if (location.pathname !== '/') {
+    return null;
+  }
 
   const handleSubscribe = (e) => {
     e.preventDefault();
