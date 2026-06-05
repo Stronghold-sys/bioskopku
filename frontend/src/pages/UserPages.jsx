@@ -597,6 +597,7 @@ export const MovieDetails = () => {
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
+              loading="lazy"
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             />
           </div>
@@ -1701,6 +1702,7 @@ export const TicketDetail = () => {
               title={`${ticket.movie.title} Trailer`} 
               frameBorder="0" 
               allowFullScreen
+              loading="lazy"
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             />
           </div>

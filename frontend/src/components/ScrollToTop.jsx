@@ -20,6 +20,11 @@ const ScrollToTop = () => {
       if (document.documentElement) {
         document.documentElement.scrollTop = 0;
         document.documentElement.scrollLeft = 0;
+        try {
+          document.documentElement.scrollIntoView(true);
+        } catch (e) {
+          // ignore fallback
+        }
       }
       if (document.body) {
         document.body.scrollTop = 0;
