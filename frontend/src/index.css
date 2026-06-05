@@ -496,7 +496,9 @@ body {
   }
 
   .movies-grid img {
-    height: 220px !important;
+    height: auto !important;
+    aspect-ratio: 2/3 !important;
+    object-fit: cover !important;
   }
 
   .movies-grid h3 {
@@ -679,14 +681,6 @@ body {
 
 /* Adjustments for extra small phone screens */
 @media (max-width: 480px) {
-  .movies-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .movies-grid img {
-    height: 340px !important;
-  }
-
   .admin-stats-grid {
     grid-template-columns: 1fr !important;
   }
