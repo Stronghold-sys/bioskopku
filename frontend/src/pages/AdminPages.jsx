@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { LayoutDashboard, Film, Calendar, Tag, FileText, Plus, Edit2, Trash2, ShieldAlert, Filter, DollarSign, Users, Film as FilmIcon, Activity } from 'lucide-react';
+import { LayoutDashboard, Film, Calendar, Tag, FileText, Plus, Edit2, Trash2, Filter, DollarSign, Users, Film as FilmIcon, Activity } from 'lucide-react';
 import { io } from 'socket.io-client';
 import ConfirmationModal from '../components/ConfirmationModal';
 import { API_BASE, API_URL } from '../config';
