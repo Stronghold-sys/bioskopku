@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
+import Footer from './components/Footer';
 import { LayoutDashboard, Film, Calendar, Tag, FileText } from 'lucide-react';
+
 import { API_URL } from './config';
 
 
@@ -176,6 +178,7 @@ const App = () => {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
