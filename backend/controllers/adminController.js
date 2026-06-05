@@ -44,10 +44,14 @@ const getDashboardStats = async (req, res) => {
       }
     }
 
-    // Recent system activity (audit logs)
-    const recentLogs = await AuditLog.find()
-      .populate('adminUserId')
-      .sort('-timestamp')
+    // Recent bookings (transactions)
+    const recentBookings = await Booking.find()
+      .populate('userId')
+      .populate({
+        path: 'showtimeId',
+        populate: [{ path: 'movieId' }]
+      })
+      .sort('-createdAt')
       .limit(10);
 
     res.status(200).json({
@@ -59,7 +63,7 @@ const getDashboardStats = async (req, res) => {
         totalRevenue,
         totalTicketsSold,
         movieSales: Object.values(movieSales),
-        recentLogs
+        recentBookings
       }
     });
   } catch (error) {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { LayoutDashboard, Film, Calendar, Tag, FileText, Plus, Edit2, Trash2, ShieldAlert, Filter, DollarSign, Users, Film as FilmIcon } from 'lucide-react';
+import { LayoutDashboard, Film, Calendar, Tag, FileText, Plus, Edit2, Trash2, ShieldAlert, Filter, DollarSign, Users, Film as FilmIcon, Activity } from 'lucide-react';
 import { io } from 'socket.io-client';
 import ConfirmationModal from '../components/ConfirmationModal';
 import { API_BASE, API_URL } from '../config';
@@ -167,25 +167,37 @@ export const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Real-time Logs */}
+        {/* Transaksi Terbaru */}
         <div className="glass" style={{ padding: '1.75rem', borderRadius: '12px' }}>
           <h3 style={{ fontSize: '1.2rem', fontWeight: '700', marginBottom: '1.25rem', color: 'white', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <ShieldAlert size={20} style={{ color: 'var(--status-error)' }} /> Audit Aktivitas Admin
+            <Activity size={20} style={{ color: 'var(--accent-gold)' }} /> Transaksi Terbaru
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxHeight: '380px', overflowY: 'auto', paddingRight: '4px' }}>
-            {stats?.recentLogs && stats.recentLogs.length > 0 ? (
-              stats.recentLogs.map((log) => (
-                <div key={log._id} style={{ display: 'flex', flexDirection: 'column', gap: '4px', padding: '10px', backgroundColor: 'rgba(5,7,15,0.6)', borderRadius: '6px', fontSize: '0.8rem', borderLeft: '3px solid var(--accent-gold)' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', color: 'white' }}>
-                    <strong>{log.action}</strong>
-                    <span style={{ color: 'var(--text-muted)' }}>{new Date(log.timestamp).toLocaleTimeString()}</span>
+            {stats?.recentBookings && stats.recentBookings.length > 0 ? (
+              stats.recentBookings.map((b) => (
+                <div key={b._id} style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '12px', backgroundColor: 'rgba(5,7,15,0.6)', borderRadius: '8px', fontSize: '0.85rem', borderLeft: `3px solid ${b.paymentStatus === 'Paid' ? 'var(--status-success)' : b.paymentStatus === 'Pending' ? 'var(--status-pending)' : 'var(--status-error)'}` }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ fontWeight: '700', color: 'white' }}>{b.userId?.name || b.userId?.email || 'Pelanggan'}</span>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{new Date(b.createdAt).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}</span>
                   </div>
-                  <div style={{ color: 'var(--text-secondary)' }}>Resource: {log.targetResource}</div>
-                  <div style={{ color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Detail: {log.payload}</div>
+                  <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>Film: {b.showtimeId?.movieId?.title || 'Film Tidak Ditemukan'}</div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '2px' }}>
+                    <span style={{ fontWeight: '600', color: 'var(--accent-gold)' }}>{formatRupiah(b.totalPrice)}</span>
+                    <span style={{ 
+                      fontSize: '0.7rem', 
+                      fontWeight: '700', 
+                      padding: '2px 8px', 
+                      borderRadius: '4px', 
+                      backgroundColor: b.paymentStatus === 'Paid' ? 'rgba(0, 230, 118, 0.1)' : b.paymentStatus === 'Pending' ? 'rgba(255, 193, 7, 0.1)' : 'rgba(255, 23, 68, 0.1)',
+                      color: b.paymentStatus === 'Paid' ? 'var(--status-success)' : b.paymentStatus === 'Pending' ? 'var(--status-pending)' : 'var(--status-error)'
+                    }}>
+                      {b.paymentStatus}
+                    </span>
+                  </div>
                 </div>
               ))
             ) : (
-              <p style={{ color: 'var(--text-secondary)', textAlign: 'center', padding: '2rem 0' }}>Belum ada logs tercatat.</p>
+              <p style={{ color: 'var(--text-secondary)', textAlign: 'center', padding: '2rem 0' }}>Belum ada transaksi tercatat.</p>
             )}
           </div>
         </div>
