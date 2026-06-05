@@ -37,13 +37,15 @@
 
 html, body {
   scroll-behavior: auto !important;
+  overflow-x: hidden !important;
+  width: 100%;
 }
 
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-sans);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -436,7 +438,7 @@ body {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 280px;
     height: 100vh;
     background: rgba(12, 15, 29, 0.98);
@@ -446,14 +448,15 @@ body {
     align-items: flex-start;
     padding: calc(6rem + env(safe-area-inset-top, 0px)) 2rem 2rem;
     gap: 1.25rem;
-    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -10px 0 40px rgba(0, 0, 0, 0.7);
     border-left: 1px solid var(--glass-border);
     z-index: 100;
   }
 
   .nav-links.open {
-    right: 0;
+    transform: translateX(0);
   }
 
   .nav-links .nav-link {
