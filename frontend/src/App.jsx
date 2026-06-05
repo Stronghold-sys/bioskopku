@@ -263,11 +263,11 @@ const AdminLayout = () => {
   });
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', minHeight: 'calc(100vh - 70px)' }}>
+    <div className="admin-grid-layout" style={{ display: 'grid', gridTemplateColumns: '260px 1fr', minHeight: 'calc(100vh - 70px)' }}>
       {/* Admin Sidebar */}
-      <aside style={{ backgroundColor: 'var(--bg-secondary)', borderRight: '1px solid var(--border-color)', padding: '2rem 1.25rem' }}>
+      <aside className="admin-sidebar" style={{ backgroundColor: 'var(--bg-secondary)', borderRight: '1px solid var(--border-color)', padding: '2rem 1.25rem' }}>
         <h3 style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1.5rem', paddingLeft: '0.5rem' }}>Navigasi Admin</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <div className="admin-sidebar-menu" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <button style={linkStyle('dashboard')} onClick={() => setTab('dashboard')}>
             <LayoutDashboard size={18} /> Dashboard
           </button>
@@ -287,7 +287,7 @@ const AdminLayout = () => {
       </aside>
 
       {/* Main Admin Workspace Panel */}
-      <section style={{ padding: '2rem 3rem', overflowY: 'auto' }}>
+      <section className="admin-workspace" style={{ padding: '2rem 3rem', overflowY: 'auto' }}>
         {renderTabContent()}
       </section>
     </div>

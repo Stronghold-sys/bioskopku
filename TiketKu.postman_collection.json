@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "8fa2021a-e8d1-4db8-b118-8f81a7ee9a3c",
 		"name": "TiketKu API Collection",
-		"description": "API collection for TiketKu Cinema Ticket Booking System containing Auth, Movies, Bookings, Payments, Tickets, and Admin dashboards.",
+		"description": "API collection for TiketKu Cinema Ticket Booking System. Fully configured for automated end-to-end testing of Auth, Movies, Cinemas, Bookings, Payments, Tickets, and Admin dashboards.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -10,42 +10,22 @@
 			"name": "Auth",
 			"item": [
 				{
-					"name": "Register User",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"user@tiketku.com\",\n    \"password\": \"user123\"\n}"
-						},
-						"url": {
-							"raw": "{{base_url}}/auth/register",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"auth",
-								"register"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Verify OTP",
+					"name": "Login Admin",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Admin login successful\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.user.role).to.eql(\"admin\");",
+									"});",
 									"if (response.success && response.accessToken) {",
-									"    pm.collectionVariables.set(\"access_token\", response.accessToken);",
+									"    pm.collectionVariables.set(\"admin_token\", response.accessToken);",
 									"}"
 								],
 								"type": "text/javascript"
@@ -62,48 +42,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"otp\": \"123456\"\n}"
-						},
-						"url": {
-							"raw": "{{base_url}}/auth/verify-otp",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"auth",
-								"verify-otp"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Login User",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"const response = pm.response.json();",
-									"if (response.success && response.accessToken) {",
-									"    pm.collectionVariables.set(\"access_token\", response.accessToken);",
-									"}"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"password\": \"user123\"\n}"
+							"raw": "{\n    \"email\": \"admin@bioskopku.com\",\n    \"password\": \"admin123\"\n}"
 						},
 						"url": {
 							"raw": "{{base_url}}/auth/login",
@@ -119,34 +58,28 @@
 					"response": []
 				},
 				{
-					"name": "Forgot Password Request",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"User login successful\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.user.role).to.eql(\"user\");",
+									"});",
+									"if (response.success && response.accessToken) {",
+									"    pm.collectionVariables.set(\"user_token\", response.accessToken);",
+									"}"
+								],
+								"type": "text/javascript"
 							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"user@tiketku.com\"\n}"
-						},
-						"url": {
-							"raw": "{{base_url}}/auth/forgot-password",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"auth",
-								"forgot-password"
-							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reset Password",
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -157,16 +90,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"user@tiketku.com\",\n    \"otp\": \"123456\",\n    \"newPassword\": \"newuser123\"\n}"
+							"raw": "{\n    \"email\": \"valenciafebi567@gmail.com\",\n    \"password\": \"admin123\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}/auth/reset-password",
+							"raw": "{{base_url}}/auth/login",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"auth",
-								"reset-password"
+								"login"
 							]
 						}
 					},
@@ -174,12 +107,30 @@
 				},
 				{
 					"name": "Get User Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Profile fetched successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.user.email).to.eql(\"valenciafebi567@gmail.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{user_token}}"
 							}
 						],
 						"url": {
@@ -198,15 +149,117 @@
 			]
 		},
 		{
-			"name": "Movies",
+			"name": "Cinemas & Studios",
 			"item": [
 				{
-					"name": "Get Movies (List/Filter/Search)",
+					"name": "Get Cinemas List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Cinemas list is not empty\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.cinemas.length).to.be.greaterThan(0);",
+									"});",
+									"if (response.success && response.cinemas.length > 0) {",
+									"    pm.collectionVariables.set(\"test_cinema_id\", response.cinemas[0]._id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/movies?search=dune&genre=Sci-Fi",
+							"raw": "{{base_url}}/cinemas",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cinemas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cinema Studios",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Studios list is not empty\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.studios.length).to.be.greaterThan(0);",
+									"});",
+									"if (response.success && response.studios.length > 0) {",
+									"    pm.collectionVariables.set(\"test_studio_id\", response.studios[0]._id);",
+									"    pm.collectionVariables.set(\"test_studio_price\", response.studios[0].basePrice.toString());",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cinemas/{{test_cinema_id}}/studios",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cinemas",
+								"{{test_cinema_id}}",
+								"studios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Get Movies List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Movies fetched successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.movies).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/movies?limit=10",
 							"host": [
 								"{{base_url}}"
 							],
@@ -215,12 +268,8 @@
 							],
 							"query": [
 								{
-									"key": "search",
-									"value": "dune"
-								},
-								{
-									"key": "genre",
-									"value": "Sci-Fi"
+									"key": "limit",
+									"value": "10"
 								}
 							]
 						}
@@ -228,7 +277,28 @@
 					"response": []
 				},
 				{
-					"name": "Create Movie (Admin Only)",
+					"name": "Create Movie (Admin)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Movie created successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.movie.title).to.eql(\"Oppenheimer Test\");",
+									"});",
+									"if (response.success && response.movie) {",
+									"    pm.collectionVariables.set(\"created_movie_id\", response.movie._id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -238,12 +308,12 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{admin_token}}"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Oppenheimer\",\n    \"posterUrl\": \"https://image.tmdb.org/t/p/original/8Gxv2wSbs87WgQ76FCwNy2b77QI.jpg\",\n    \"trailerUrl\": \"https://www.youtube.com/embed/uYPbbksJxIg\",\n    \"synopsis\": \"The story of J. Robert Oppenheimer and his nuclear program.\",\n    \"genre\": \"Biography, Drama, History\",\n    \"duration\": 180,\n    \"rating\": \"R\",\n    \"releaseDate\": \"2023-07-21\"\n}"
+							"raw": "{\n    \"title\": \"Oppenheimer Test\",\n    \"posterUrl\": \"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400\",\n    \"trailerUrl\": \"https://www.youtube.com/embed/uYPbbksJxIg\",\n    \"synopsis\": \"The story of J. Robert Oppenheimer and his nuclear program.\",\n    \"genre\": \"Biography, Drama\",\n    \"duration\": 180,\n    \"rating\": \"R\",\n    \"releaseDate\": \"2026-06-25\"\n}"
 						},
 						"url": {
 							"raw": "{{base_url}}/movies",
@@ -260,37 +330,30 @@
 			]
 		},
 		{
-			"name": "Bookings & Payments",
+			"name": "Showtimes",
 			"item": [
 				{
-					"name": "Get Showtimes",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/showtimes?movieId=some_id&date=2026-06-05",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"showtimes"
-							],
-							"query": [
-								{
-									"key": "movieId",
-									"value": "some_id"
-								},
-								{
-									"key": "date",
-									"value": "2026-06-05"
-								}
-							]
+					"name": "Create Showtime (Admin)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Showtime created successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"});",
+									"if (response.success && response.showtime) {",
+									"    pm.collectionVariables.set(\"created_showtime_id\", response.showtime._id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create Seat Booking",
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -300,12 +363,113 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{admin_token}}"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"showtimeId\": \"some_showtime_id\",\n    \"selectedSeats\": [\"A-1\", \"A-2\"],\n    \"promoCode\": \"TIKETKUSTART\"\n}"
+							"raw": "{\n    \"movieId\": \"{{created_movie_id}}\",\n    \"studioId\": \"{{test_studio_id}}\",\n    \"date\": \"2026-06-25\",\n    \"startTime\": \"14:00\",\n    \"price\": {{test_studio_price}}\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/showtimes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showtimes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Showtimes for Movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Showtimes fetched successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.showtimes).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/showtimes?movieId={{created_movie_id}}&date=2026-06-25",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showtimes"
+							],
+							"query": [
+								{
+									"key": "movieId",
+									"value": "{{created_movie_id}}"
+								},
+								{
+									"key": "date",
+									"value": "2026-06-25"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings & Tickets",
+			"item": [
+				{
+					"name": "Create Booking (User)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Booking created successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.booking.paymentStatus).to.eql(\"Pending\");",
+									"});",
+									"if (response.success && response.booking) {",
+									"    pm.collectionVariables.set(\"created_booking_id\", response.booking._id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"showtimeId\": \"{{created_showtime_id}}\",\n    \"selectedSeats\": [\"A-1\", \"A-2\"]\n}"
 						},
 						"url": {
 							"raw": "{{base_url}}/bookings",
@@ -321,6 +485,23 @@
 				},
 				{
 					"name": "Confirm Payment Checkout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Payment confirmed successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -330,12 +511,12 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{user_token}}"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"bookingId\": \"some_booking_id\",\n    \"paymentMethod\": \"E-Wallet (GoPay/OVO/Dana)\"\n}"
+							"raw": "{\n    \"bookingId\": \"{{created_booking_id}}\",\n    \"paymentMethod\": \"E-Wallet (GoPay/OVO/Dana)\"\n}"
 						},
 						"url": {
 							"raw": "{{base_url}}/payments/confirm",
@@ -352,22 +533,40 @@
 				},
 				{
 					"name": "Get Ticket Digital",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Ticket details retrieved successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.ticket.ticketCode).to.not.be.undefined;",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{user_token}}"
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/tickets/some_booking_id",
+							"raw": "{{base_url}}/tickets/{{created_booking_id}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"tickets",
-								"some_booking_id"
+								"{{created_booking_id}}"
 							]
 						}
 					},
@@ -376,16 +575,34 @@
 			]
 		},
 		{
-			"name": "Admin Dashboard",
+			"name": "Admin Operations",
 			"item": [
 				{
 					"name": "Get Admin Dashboard Stats",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Dashboard stats retrieved successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.stats).to.not.be.undefined;",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{admin_token}}"
 							}
 						],
 						"url": {
@@ -403,16 +620,34 @@
 				},
 				{
 					"name": "Get Transaction Reports",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Reports retrieved successfully\", function () {",
+									"    pm.expect(response.success).to.be.true;",
+									"    pm.expect(response.transactions).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{access_token}}"
+								"value": "Bearer {{admin_token}}"
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/admin/reports?startDate=2026-06-01&paymentStatus=Paid",
+							"raw": "{{base_url}}/admin/reports?startDate=2026-06-01",
 							"host": [
 								"{{base_url}}"
 							],
@@ -424,11 +659,79 @@
 								{
 									"key": "startDate",
 									"value": "2026-06-01"
-								},
-								{
-									"key": "paymentStatus",
-									"value": "Paid"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cleanup Delete Showtime (Admin)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/showtimes/{{created_showtime_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showtimes",
+								"{{created_showtime_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cleanup Delete Movie (Admin)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/movies/{{created_movie_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"movies",
+								"{{created_movie_id}}"
 							]
 						}
 					},
@@ -464,8 +767,43 @@
 			"type": "string"
 		},
 		{
-			"key": "access_token",
-			"value": "your_access_token_here",
+			"key": "admin_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "user_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "test_cinema_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "test_studio_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "test_studio_price",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "created_movie_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "created_showtime_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "created_booking_id",
+			"value": "",
 			"type": "string"
 		}
 	]

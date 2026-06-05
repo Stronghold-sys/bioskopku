@@ -92,7 +92,7 @@ export const AdminDashboard = () => {
       </h1>
 
       {/* Stats Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+      <div className="admin-stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
         <div className="glass" style={{ padding: '1.5rem', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
           <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'rgba(0, 230, 118, 0.1)', color: 'var(--status-success)' }}>
             <DollarSign size={28} />
@@ -142,7 +142,7 @@ export const AdminDashboard = () => {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: '2rem' }}>
+      <div className="admin-main-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: '2rem' }}>
         
         {/* Sales by Movie */}
         <div className="glass" style={{ padding: '1.75rem', borderRadius: '12px' }}>
@@ -385,7 +385,7 @@ export const MovieManagement = () => {
       </div>
 
       {/* Grid of Movies for Edit/Delete */}
-      <div className="glass" style={{ borderRadius: '12px', overflow: 'hidden' }}>
+      <div className="glass admin-table-container" style={{ borderRadius: '12px', overflow: 'hidden' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
@@ -675,7 +675,7 @@ export const ShowtimeManagement = () => {
         </button>
       </div>
 
-      <div className="glass" style={{ borderRadius: '12px', overflow: 'hidden' }}>
+      <div className="glass admin-table-container" style={{ borderRadius: '12px', overflow: 'hidden' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
@@ -872,7 +872,7 @@ export const PromoManagement = () => {
         </button>
       </div>
 
-      <div className="glass" style={{ borderRadius: '12px', overflow: 'hidden' }}>
+      <div className="glass admin-table-container" style={{ borderRadius: '12px', overflow: 'hidden' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
           <thead>
             <tr style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
@@ -1110,7 +1110,7 @@ export const ReportManagement = () => {
           </div>
 
           {/* Grid Grid Transaction */}
-          <div className="glass" style={{ borderRadius: '12px', overflow: 'hidden' }}>
+          <div className="glass admin-table-container" style={{ borderRadius: '12px', overflow: 'hidden' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.85rem' }}>
               <thead>
                 <tr style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: 'rgba(255,255,255,0.02)' }}>

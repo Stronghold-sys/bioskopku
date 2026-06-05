@@ -10,6 +10,28 @@ import { API_BASE, API_URL } from '../config';
 // Helper to format currency
 const formatRupiah = (val) => `Rp ${val.toLocaleString('id-ID')}`;
 
+// Helper to get local date string YYYY-MM-DD
+const getTodayStr = () => {
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+// Helper to safely construct a local date-time object from YYYY-MM-DD and HH:MM
+const getShowtimeDateTime = (dateStr, timeStr) => {
+  if (!dateStr || !timeStr) return new Date();
+  try {
+    const [year, month, day] = dateStr.split('-').map(Number);
+    const [hours, minutes] = timeStr.split(':').map(Number);
+    return new Date(year, month - 1, day, hours, minutes, 0);
+  } catch (e) {
+    console.error('Error parsing showtime datetime:', e);
+    return new Date();
+  }
+};
+
 // Helper to extract YouTube video ID and return embed URL
 const getYouTubeEmbedUrl = (url) => {
   if (!url) return '';
@@ -80,22 +102,28 @@ export const Home = () => {
     };
   }, []);
 
-  const todayStr = '2026-06-04';
-  const nowShowing = movies.filter(m => m.releaseDate <= todayStr).slice(0, 4);
-  const upcoming = movies.filter(m => m.releaseDate > todayStr).slice(0, 4);
+  const todayStr = getTodayStr();
+  const nowShowing = movies
+    .filter(m => m.releaseDate <= todayStr)
+    .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate))
+    .slice(0, 4);
+  const upcoming = movies
+    .filter(m => m.releaseDate > todayStr)
+    .sort((a, b) => a.releaseDate.localeCompare(b.releaseDate))
+    .slice(0, 4);
 
   return (
     <div style={{ paddingBottom: '4rem' }}>
       {/* Hero Banner Component */}
-      <div style={{ position: 'relative', height: '60vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="hero-container" style={{ position: 'relative', height: '60vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&auto=format&fit=crop&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.25) blur(2px)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, var(--bg-primary) 100%)' }} />
         
         <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', maxWidth: '800px', padding: '0 20px' }}>
-          <h1 className="text-glow" style={{ fontFamily: 'var(--font-sans)', fontSize: '3.5rem', fontWeight: '900', letterSpacing: '4px', marginBottom: '1rem', color: '#ffffff' }}>
+          <h1 className="text-glow hero-title" style={{ fontFamily: 'var(--font-sans)', fontSize: '3.5rem', fontWeight: '900', letterSpacing: '4px', marginBottom: '1rem', color: '#ffffff' }}>
             Nonton Seru Tanpa Ribet
           </h1>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem', fontFamily: 'var(--font-mono)' }}>
+          <p className="hero-subtitle" style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem', fontFamily: 'var(--font-mono)' }}>
             Pesan tiket bioskop film favorit Anda hanya dalam hitungan detik.
           </p>
           <Link to="/movies" className="btn btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
@@ -111,7 +139,7 @@ export const Home = () => {
             <Tag style={{ color: 'var(--accent-gold)' }} /> Promo Menarik
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+          <div className="promos-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
             {loading ? (
               [1, 2, 3].map((n) => <div key={n} className="skeleton" style={{ height: '160px', borderRadius: '12px' }} />)
             ) : (
@@ -145,7 +173,7 @@ export const Home = () => {
             </Link>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
+          <div className="movies-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
             {loading ? (
               [1, 2, 4].map((n) => <SkeletonCard key={n} />)
             ) : nowShowing.length > 0 ? (
@@ -181,7 +209,7 @@ export const Home = () => {
             </Link>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
+          <div className="movies-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
             {loading ? (
               [1, 2, 4].map((n) => <SkeletonCard key={n} />)
             ) : upcoming.length > 0 ? (
@@ -258,7 +286,7 @@ export const MovieList = () => {
     };
   }, [search]);
 
-  const todayStr = '2026-06-04';
+  const todayStr = getTodayStr();
 
   const filteredMovies = movies.filter((m) => {
     // 1. Filter by screening status
@@ -283,13 +311,13 @@ export const MovieList = () => {
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 20px 4rem' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1.5rem', flexWrap: 'wrap' }}>
+        <div className="movie-list-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1.5rem', flexWrap: 'wrap' }}>
           <div>
             <h1 style={{ fontSize: '2.25rem', fontWeight: '800', marginBottom: '0.25rem' }}>Daftar Film</h1>
             <p style={{ color: 'var(--text-secondary)' }}>Temukan film-film terbaik tahun 2026 di BioskopKu.</p>
           </div>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-end' }}>
+          <div className="movie-list-filters" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-end' }}>
             {/* Status Screening Tabs */}
             <div style={{ display: 'flex', gap: '0.5rem', background: 'var(--bg-secondary)', padding: '4px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
               <button 
@@ -395,7 +423,7 @@ export const MovieList = () => {
         />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
+      <div className="movies-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
         {loading ? (
           [1, 2, 3, 4].map((n) => <SkeletonCard key={n} />)
         ) : filteredMovies.length > 0 ? (
@@ -455,12 +483,15 @@ export const MovieDetails = () => {
       if (movieData.success) {
         setMovie(movieData.movie);
         
-        // Generate 3 show dates starting today
+        // Generate 3 show dates starting today (local timezone)
         const dateArr = [];
         for (let i = 0; i < 3; i++) {
           const d = new Date();
           d.setDate(d.getDate() + i);
-          dateArr.push(d.toISOString().split('T')[0]);
+          const year = d.getFullYear();
+          const month = String(d.getMonth() + 1).padStart(2, '0');
+          const day = String(d.getDate()).padStart(2, '0');
+          dateArr.push(`${year}-${month}-${day}`);
         }
         setDates(dateArr);
         setSelectedDate(dateArr[0]);
@@ -529,12 +560,12 @@ export const MovieDetails = () => {
     return <div style={{ textAlign: 'center', padding: '4rem 0' }}>Film tidak ditemukan.</div>;
   }
 
-  const todayStr = '2026-06-04';
+  const todayStr = getTodayStr();
   const isUpcoming = movie.releaseDate > todayStr;
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 20px 4rem' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '3rem' }}>
+      <div className="movie-details-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '3rem' }}>
         
         {/* Poster Column */}
         <div style={{ textAlign: 'center' }}>
@@ -543,7 +574,7 @@ export const MovieDetails = () => {
 
         {/* Info Column */}
         <div>
-          <h1 className="text-glow" style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '1rem', color: 'white' }}>{movie.title}</h1>
+          <h1 className="text-glow movie-details-title" style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '1rem', color: 'white' }}>{movie.title}</h1>
           
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             <span style={{ border: '1px solid var(--text-muted)', padding: '2px 8px', borderRadius: '4px', fontWeight: '700' }}>{movie.rating}</span>
@@ -871,10 +902,10 @@ export const SeatBooking = () => {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
+      <div className="booking-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
         
         {/* Layout Grid */}
-        <div className="glass" style={{ padding: '2.5rem', borderRadius: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="glass booking-seats-panel" style={{ padding: '2.5rem', borderRadius: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           
           {/* Cinema Screen semicircle curve */}
           <div className="screen-container">
@@ -935,7 +966,7 @@ export const SeatBooking = () => {
         </div>
 
         {/* Sidebar Summary */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <div className="booking-summary-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <div className="glass" style={{ padding: '1.5rem', borderRadius: '12px' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>Ringkasan Pesanan</h3>
             
@@ -1129,7 +1160,7 @@ export const Checkout = () => {
       <div className="glass" style={{ padding: '2rem', borderRadius: '16px', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         
         {/* Ticket Header Details */}
-        <div style={{ display: 'flex', gap: '1.5rem' }}>
+        <div className="checkout-header-flex" style={{ display: 'flex', gap: '1.5rem' }}>
           <img src={movie?.posterUrl} alt={movie?.title} style={{ width: '100px', height: '140px', objectFit: 'cover', borderRadius: '8px' }} />
           <div>
             <h2 style={{ fontSize: '1.4rem', fontWeight: '800', color: 'white' }}>{movie?.title}</h2>
@@ -1426,11 +1457,13 @@ export const TicketList = () => {
             const studio = b.showtimeId?.studioId;
             const isPaid = b.paymentStatus === 'Paid';
             const isPending = b.paymentStatus === 'Pending';
+            const showtimeDateTime = b.showtimeId ? getShowtimeDateTime(b.showtimeId.date, b.showtimeId.startTime) : null;
+            const isPlayed = showtimeDateTime && (new Date().getTime() > (showtimeDateTime.getTime() + 3 * 60 * 60 * 1000));
             
             return (
               <div 
                 key={b._id} 
-                className="glass" 
+                className="glass ticket-item-card" 
                 style={{ 
                   borderRadius: '12px', 
                   padding: '1.5rem', 
@@ -1455,16 +1488,32 @@ export const TicketList = () => {
                 </div>
 
                 <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '8px' }}>
-                  <span style={{ 
-                    fontSize: '0.75rem', 
-                    fontWeight: '700', 
-                    padding: '4px 8px', 
-                    borderRadius: '4px',
-                    backgroundColor: isPaid ? 'rgba(0, 230, 118, 0.15)' : isPending ? 'rgba(255, 193, 7, 0.15)' : 'rgba(255,255,255,0.05)',
-                    color: isPaid ? 'var(--status-success)' : isPending ? 'var(--status-pending)' : 'var(--text-secondary)'
-                  }}>
-                    {b.paymentStatus === 'Paid' ? 'LUNAS' : b.paymentStatus}
-                  </span>
+                  <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                    {isPlayed && (
+                      <span style={{ 
+                        fontSize: '0.7rem', 
+                        fontWeight: '800', 
+                        padding: '3px 6px', 
+                        borderRadius: '4px',
+                        backgroundColor: 'rgba(255, 23, 68, 0.15)',
+                        color: 'var(--status-error)',
+                        border: '1px solid rgba(255, 23, 68, 0.3)',
+                        letterSpacing: '0.5px'
+                      }}>
+                        SUDAH TAYANG
+                      </span>
+                    )}
+                    <span style={{ 
+                      fontSize: '0.75rem', 
+                      fontWeight: '700', 
+                      padding: '4px 8px', 
+                      borderRadius: '4px',
+                      backgroundColor: isPaid ? 'rgba(0, 230, 118, 0.15)' : isPending ? 'rgba(255, 193, 7, 0.15)' : 'rgba(255,255,255,0.05)',
+                      color: isPaid ? 'var(--status-success)' : isPending ? 'var(--status-pending)' : 'var(--text-secondary)'
+                    }}>
+                      {b.paymentStatus === 'Paid' ? 'LUNAS' : b.paymentStatus}
+                    </span>
+                  </div>
                   
                   <span style={{ fontSize: '1.1rem', fontWeight: '700', color: 'white' }}>
                     {formatRupiah(b.totalPrice)}
@@ -1524,44 +1573,81 @@ export const TicketDetail = () => {
   if (loading) return <div style={{ textAlign: 'center', padding: '4rem 0' }}>Memuat tiket digital...</div>;
   if (!ticket) return <div style={{ textAlign: 'center', padding: '4rem 0' }}>Tiket tidak ditemukan.</div>;
 
+  const showtimeDateTime = ticket ? getShowtimeDateTime(ticket.showtime.date, ticket.showtime.startTime) : null;
+  const isPlayed = showtimeDateTime && (new Date().getTime() > (showtimeDateTime.getTime() + 3 * 60 * 60 * 1000));
+
   return (
     <div style={{ maxWidth: '800px', margin: '2rem auto 4rem', padding: '0 20px' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '2rem', textAlign: 'center' }}>E-Ticket Anda</h1>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+      <div className="ticket-detail-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'start' }}>
         
         {/* Cinematic Ticket Card Layout */}
-        <div className="ticket-card glass" style={{ border: '1px solid rgba(255, 170, 0, 0.25)' }}>
+        <div className="ticket-card glass" style={{ border: '1px solid rgba(255, 170, 0, 0.25)', overflow: 'hidden' }}>
           <div className="glow-effect" />
           
-          <img src={ticket.movie.posterUrl} alt={ticket.movie.title} style={{ width: '100%', height: '220px', objectFit: 'cover' }} />
+          {/* Redesigned compact side-by-side header */}
+          <div style={{ display: 'flex', gap: '1.25rem', padding: '1.5rem', alignItems: 'flex-start', borderBottom: '1px dashed rgba(255, 255, 255, 0.08)' }}>
+            <img 
+              src={ticket.movie.posterUrl} 
+              alt={ticket.movie.title} 
+              style={{ 
+                width: '90px', 
+                height: '135px', 
+                objectFit: 'contain', 
+                borderRadius: '8px', 
+                boxShadow: '0 8px 16px rgba(0, 0, 0, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(5, 7, 15, 0.4)',
+                flexShrink: 0
+              }} 
+            />
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+              <h2 style={{ fontSize: '1.35rem', fontWeight: '800', color: 'white', margin: 0, lineHeight: '1.25' }}>{ticket.movie.title}</h2>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', margin: 0 }}>{ticket.movie.genre}</p>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', margin: 0 }}>⌛ {ticket.movie.duration} Mins</p>
+              {isPlayed && (
+                <span style={{ 
+                  alignSelf: 'flex-start',
+                  backgroundColor: 'rgba(255, 23, 68, 0.15)', 
+                  color: 'var(--status-error)', 
+                  border: '1px solid rgba(255, 23, 68, 0.3)', 
+                  fontSize: '0.7rem', 
+                  fontWeight: '800', 
+                  padding: '2px 8px', 
+                  borderRadius: '4px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px',
+                  marginTop: '0.25rem'
+                }}>
+                  Sudah Tayang
+                </span>
+              )}
+            </div>
+          </div>
           
           <div style={{ padding: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'white' }}>{ticket.movie.title}</h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>{ticket.movie.genre} | {ticket.movie.duration} Mins</p>
-            
-            <div className="ticket-divider" />
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', fontSize: '0.85rem' }}>
-              <div>
+              <div style={{ gridColumn: 'span 2' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'block' }}>KODE BOOKING</span>
-                <span style={{ fontWeight: '700', color: 'var(--accent-gold)', fontSize: '1rem', fontFamily: 'var(--font-mono)' }}>{ticket.ticketCode}</span>
+                <span style={{ fontWeight: '700', color: 'var(--accent-gold)', fontSize: '1.1rem', fontFamily: 'var(--font-mono)', letterSpacing: '1px' }}>{ticket.ticketCode}</span>
               </div>
               <div>
                 <span style={{ color: 'var(--text-muted)', display: 'block' }}>NAMA</span>
                 <span style={{ fontWeight: '700', color: 'white' }}>{ticket.user.name}</span>
               </div>
-              <div style={{ gridColumn: 'span 2' }}>
+              <div>
+                <span style={{ color: 'var(--text-muted)', display: 'block' }}>KURSI</span>
+                <span style={{ fontWeight: '700', color: 'var(--accent-gold)', fontSize: '1rem' }}>{ticket.booking.selectedSeats.join(', ')}</span>
+              </div>
+              <div>
                 <span style={{ color: 'var(--text-muted)', display: 'block' }}>BIOSKOP</span>
-                <span style={{ fontWeight: '700', color: 'var(--accent-gold)', fontSize: '0.95rem' }}>{ticket.showtime.cinemaName}</span>
+                <span style={{ fontWeight: '700', color: 'white' }}>{ticket.showtime.cinemaName}</span>
               </div>
               <div>
                 <span style={{ color: 'var(--text-muted)', display: 'block' }}>STUDIO</span>
                 <span style={{ fontWeight: '700', color: 'white' }}>{ticket.showtime.studioName}</span>
-              </div>
-              <div>
-                <span style={{ color: 'var(--text-muted)', display: 'block' }}>KURSI</span>
-                <span style={{ fontWeight: '700', color: 'var(--accent-gold)', fontSize: '1rem' }}>{ticket.booking.selectedSeats.join(', ')}</span>
               </div>
               <div>
                 <span style={{ color: 'var(--text-muted)', display: 'block' }}>TANGGAL</span>
@@ -1575,10 +1661,30 @@ export const TicketDetail = () => {
 
             <div className="ticket-divider" />
 
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', padding: '1rem 0' }}>
-              <img src={ticket.qrCode} alt="QR Code" style={{ width: '150px', height: '150px', backgroundColor: 'white', padding: '8px', borderRadius: '8px' }} />
-              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', letterSpacing: '1px' }}>SCAN QR PADA CO-TICKET READER</span>
-            </div>
+            {isPlayed ? (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0', textAlign: 'center' }}>
+                <div style={{
+                  border: '2px dashed rgba(255, 23, 68, 0.4)',
+                  borderRadius: '12px',
+                  padding: '1.25rem 2rem',
+                  backgroundColor: 'rgba(255, 23, 68, 0.05)',
+                  color: 'var(--status-error)',
+                  minWidth: '200px'
+                }}>
+                  <div style={{ fontSize: '1.35rem', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase' }}>
+                    Sudah Tayang
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                    Tiket ini telah melewati batas waktu penayangan.
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', padding: '1rem 0' }}>
+                <img src={ticket.qrCode} alt="QR Code" style={{ width: '150px', height: '150px', backgroundColor: 'white', padding: '8px', borderRadius: '8px' }} />
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', letterSpacing: '1px' }}>SCAN QR PADA CO-TICKET READER</span>
+              </div>
+            )}
           </div>
         </div>
 

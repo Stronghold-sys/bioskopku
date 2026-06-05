@@ -13,17 +13,17 @@ const seedDB = async () => {
     console.log('🌱 Seeding database...');
 
     // 1. Seed Admin & Standard User if not exists
-    let admin = await User.findOne({ email: 'admin@bioskop.com' });
+    let admin = await User.findOne({ email: 'admin@bioskopku.com' });
     const hashedAdminPassword = await bcrypt.hash('admin123', 10);
     if (!admin) {
       admin = await User.create({
         name: 'Administrator',
-        email: 'admin@bioskop.com',
+        email: 'admin@bioskopku.com',
         password: hashedAdminPassword,
         role: 'admin',
         isVerified: true
       });
-      console.log('✅ Admin user created: admin@bioskop.com / admin123');
+      console.log('✅ Admin user created: admin@bioskopku.com / admin123');
     } else {
       admin.role = 'admin';
       admin.password = hashedAdminPassword;

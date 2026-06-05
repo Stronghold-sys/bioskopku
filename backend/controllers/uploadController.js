@@ -49,14 +49,27 @@ const uploadFile = async (req, res) => {
           });
         } else {
           console.warn('⚠️ Supabase upload returned error:', error.message);
+          if (process.env.VERCEL) {
+            return res.status(400).json({
+              success: false,
+              message: `Gagal mengunggah ke Supabase Storage: ${error.message}. Pastikan bucket 'movies' sudah dibuat dengan policy 'public upload' di Supabase.`
+            });
+          }
         }
       } catch (err) {
         console.warn('⚠️ Supabase upload exception:', err.message);
+        if (process.env.VERCEL) {
+          return res.status(500).json({
+            success: false,
+            message: `Exception Supabase Storage: ${err.message}`
+          });
+        }
       }
     }
 
     // 2. Fallback to local storage
-    const uploadDir = path.join(__dirname, '../../uploads');
+    const isVercel = !!process.env.VERCEL;
+    const uploadDir = isVercel ? '/tmp/uploads' : path.join(__dirname, '../../uploads');
     if (!fs.existsSync(uploadDir)) {
       fs.mkdirSync(uploadDir, { recursive: true });
     }
@@ -66,13 +79,13 @@ const uploadFile = async (req, res) => {
 
     // Return local URL
     const host = req.get('host');
-    const protocol = req.protocol;
+    const protocol = host.includes('localhost') || host.includes('127.0.0.1') ? req.protocol : 'https';
     const url = `${protocol}://${host}/uploads/${filename}`;
 
-    console.log('📡 File saved to local storage successfully:', url);
+    console.log(`📡 File saved to ${isVercel ? 'Vercel /tmp' : 'local'} storage successfully:`, url);
     return res.status(200).json({
       success: true,
-      message: 'File berhasil diunggah secara lokal',
+      message: isVercel ? 'File berhasil diunggah sementara ke Vercel /tmp' : 'File berhasil diunggah secara lokal',
       url
     });
 
