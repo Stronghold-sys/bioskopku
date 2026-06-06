@@ -40,7 +40,7 @@ Mendaftarkan pengguna baru dengan email dan password. Pengguna baru akan berstat
     "message": "Registrasi berhasil. Silakan cek email Anda untuk kode verifikasi OTP.",
     "user": {
       "id": "665f84d63be5ff4218a5be01",
-      "name": "John Doe",
+      "name": "User",
       "email": "user@tiketku.com",
       "role": "user",
       "isVerified": false
@@ -118,7 +118,7 @@ Melakukan autentikasi email dan password. Menghasilkan `accessToken` (berlaku 15
     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWY4NGQ2M2JlNWZmNDIxOGE1YmUwMSIs...",
     "user": {
       "id": "665f84d63be5ff4218a5be01",
-      "name": "John Doe",
+      "name": "User",
       "email": "user@tiketku.com",
       "role": "user",
       "isVerified": true

@@ -53,7 +53,7 @@ const seedDB = async () => {
     if (!standardUser) {
       const hashedUserPassword = await bcrypt.hash('user123', 10);
       standardUser = await User.create({
-        name: 'John Doe',
+        name: 'User',
         email: 'user@bioskopku.com',
         password: hashedUserPassword,
         role: 'user',
