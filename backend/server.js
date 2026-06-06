@@ -80,7 +80,7 @@ const startServer = async () => {
   await seedDB();
 
   server.listen(PORT, () => {
-    console.log(`🚀 Server running on port http://localhost:${PORT}`);
+    console.log(` Server running on port http://localhost:${PORT}`);
   });
 };
 
